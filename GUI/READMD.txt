@@ -1,0 +1,8 @@
+GUI버전은 아직 이벤트 핸들링이 수행되지 않았습니다.
+FoxVc의 기능이 증가하고, 기능들의 안정성이 확실해지면 이 폴더에 있는 GUI form으로
+새롭게 만들어질 예정입니다.
+
+다만, 새로운 gui form이 개발될 경우 새로운 버전의 gui form으로 교체 될 수 있습니다.
+
+
+사용 이미지 저작권 : https://www.boredpanda.com/fox-species-wildlife-photography/
