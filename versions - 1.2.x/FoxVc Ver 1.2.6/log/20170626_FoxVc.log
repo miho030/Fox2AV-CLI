@@ -1,0 +1,704 @@
+[2017-06-26 13:47:28] [    INFO] [logger          ] --- 
+[2017-06-26 13:47:28] [    INFO] [logger          ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc Ver 1.2.4_edit\log\20170626_FoxVc.log'
+[2017-06-26 13:47:31] [    INFO] [FoxVc Ver 1.2.4 ] --- Ready for Scan Drive : E:\bak
+[2017-06-26 13:47:32] [    INFO] [FoxVc Ver 1.2.4 ] --- Detected Virus file : 'E:\bak\sample.txt'
+[2017-06-26 13:47:35] [    INFO] [FoxVc Ver 1.2.4 ] --- Virus File Removed
+[2017-06-26 13:47:35] [    INFO] [FoxVc Ver 1.2.4 ] --- Removed file : E:\bak\sample.txt
+[2017-06-26 13:48:10] [    INFO] [logger          ] --- 
+[2017-06-26 13:48:10] [    INFO] [logger          ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc Ver 1.2.4_edit\log\20170626_FoxVc.log'
+[2017-06-26 13:48:12] [    INFO] [FoxVc Ver 1.2.4 ] --- Ready for Scan Drive : E:\bak
+[2017-06-26 13:48:14] [    INFO] [FoxVc Ver 1.2.4 ] --- Detected Virus file : 'E:\bak\sample.txt'
+[2017-06-26 13:48:16] [    INFO] [FoxVc Ver 1.2.4 ] --- Your System Will be Danger. Virus File is still exist.
+[2017-06-26 13:48:37] [    INFO] [logger          ] --- 
+[2017-06-26 13:48:37] [    INFO] [logger          ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc Ver 1.2.4_edit\log\20170626_FoxVc.log'
+[2017-06-26 13:48:39] [    INFO] [FoxVc Ver 1.2.4 ] --- Ready for Scan Drive : E:\bak
+[2017-06-26 13:48:41] [    INFO] [FoxVc Ver 1.2.4 ] --- Cannot detect Virus !
+[2017-06-26 17:16:38] [    INFO] [logger          ] --- 
+[2017-06-26 17:16:38] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_FoxVc.log'
+[2017-06-26 17:20:35] [    INFO] [foxvc ver 1.2.4 ] --- Ready for Scan Drive : C:\
+[2017-06-26 17:23:50] [    INFO] [logger          ] --- 
+[2017-06-26 17:23:50] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_FoxVc.log'
+[2017-06-26 17:23:55] [    INFO] [foxvc ver 1.2.4 ] --- Ready for Scan Drive : G:\
+[2017-06-26 17:23:55] [    INFO] [foxvc ver 1.2.4 ] --- Cannot detect Virus !
+[2017-06-26 17:24:44] [    INFO] [logger          ] --- 
+[2017-06-26 17:24:44] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_FoxVc.log'
+[2017-06-26 17:24:47] [    INFO] [foxvc ver 1.2.4 ] --- Ready for Scan Drive : C:\
+[2017-06-26 17:26:36] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:26:36] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:26:36] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:26:36] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:26:36] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:26:36] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:28:08] [    INFO] [logger          ] --- 
+[2017-06-26 17:28:08] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_FoxVc.log'
+[2017-06-26 17:28:11] [    INFO] [foxvc ver 1.2.4 ] --- Ready for Scan Drive : E:\
+[2017-06-26 17:29:25] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:29:25] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:29:25] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:29:25] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:30:42] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:30:42] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:32:27] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:32:27] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:37] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:37] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:34:44] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:34:44] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:35:09] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:35:09] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:35:09] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:35:09] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:35:09] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 17:35:09] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 17:42:59] [    INFO] [logger          ] --- 
+[2017-06-26 17:42:59] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_FoxVc.log'
+[2017-06-26 17:43:02] [    INFO] [foxvc ver 1.2.4 ] --- Ready for Scan Drive : E:\
+[2017-06-26 17:43:10] [    INFO] [logger          ] --- 
+[2017-06-26 17:43:10] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_FoxVc.log'
+[2017-06-26 17:43:12] [    INFO] [foxvc ver 1.2.4 ] --- Ready for Scan Drive : G:\
+[2017-06-26 17:43:12] [    INFO] [foxvc ver 1.2.4 ] --- Cannot detect Virus !
+[2017-06-26 21:44:57] [    INFO] [logger          ] --- 
+[2017-06-26 21:44:57] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_FoxVc.log'
+[2017-06-26 21:45:00] [    INFO] [foxvc ver 1.2.4 ] --- Ready for Scan Drive : C:\
+[2017-06-26 21:52:00] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:52:00] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:52:01] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:52:01] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:52:01] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:52:01] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:52:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:52:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:23] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:24] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:25] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:25] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:25] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:25] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:25] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:25] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:25] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:25] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:25] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:25] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 21:58:25] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 21:58:25] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:03:59] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:03:59] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:14:27] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:14:27] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:14:27] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:14:27] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:22:31] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:22:31] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:22:31] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:22:31] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:22:31] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:22:31] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:23:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:23:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:23:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:23:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:23:43] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:23:43] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:23:48] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:23:48] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:52] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:53] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:56] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:56] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:56] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:56] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:57] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:57] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:57] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:57] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:57] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:57] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:57] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:57] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:58] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:58] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:58] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:58] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:58] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:58] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:58] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:58] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:58] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:58] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:24:58] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:24:58] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:25:00] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:25:00] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:25:58] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:25:58] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:36:20] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:36:20] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:36:20] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:36:20] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:36:20] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:36:20] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:37:14] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:37:14] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:37:14] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:37:14] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:37:14] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:37:14] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:37:19] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:37:19] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:03] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:05] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:05] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:06] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:06] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:06] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:06] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:06] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:06] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:06] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:06] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:06] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:06] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:07] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:07] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:07] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:07] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:07] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:07] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:07] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:07] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:07] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:07] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:07] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:07] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:09] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:09] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:38:50] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:38:50] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:39:07] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:39:07] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:39:07] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:39:07] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:39:07] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:39:07] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:39:31] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:39:31] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:39:31] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:39:31] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:39:31] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:39:31] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 22:39:31] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 22:39:31] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:01:46] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 23:01:46] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:01:46] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 23:01:46] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:01:46] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 23:01:46] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:01:46] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 23:01:46] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:01:50] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 23:01:50] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:02:05] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 23:02:05] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:02:22] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 23:02:22] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:02:22] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 23:02:22] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:02:22] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 23:02:22] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:02:23] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 23:02:23] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:02:23] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 23:02:23] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:10:27] [    INFO] [logger          ] --- 
+[2017-06-26 23:10:27] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_FoxVc.log'
+[2017-06-26 23:10:32] [    INFO] [foxvc ver 1.2.4 ] --- Ready for Scan Drive : G:\
+[2017-06-26 23:10:33] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 23:10:33] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:10:34] [   ERROR] [matchinghashvalue] --- IOError : Permission denied. / No such file or directory.
+[2017-06-26 23:10:34] [   ERROR] [matchinghashvalue] --- 
+[2017-06-26 23:10:34] [    INFO] [foxvc ver 1.2.4 ] --- Cannot detect Virus !
+[2017-06-26 23:14:50] [    INFO] [logger          ] --- 
+[2017-06-26 23:14:50] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_FoxVc.log'

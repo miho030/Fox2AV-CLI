@@ -1,0 +1,48 @@
+[2017-06-29 06:16:43] [    INFO] [scanlogger      ] --- 
+[2017-06-29 06:16:43] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc-Test\log\20170629_Scan.log'
+[2017-06-29 06:16:50] [    INFO] [foxvc ver 1.2.4 ] --- [+] Ready for Scan Drive : C:\
+[2017-06-29 06:24:02] [    INFO] [scanlogger      ] --- 
+[2017-06-29 06:24:02] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc-Test\log\20170629_Scan.log'
+[2017-06-29 06:24:07] [    INFO] [foxvc ver 1.2.4 ] --- [+] Ready for Scan Drive : C:\
+[2017-06-29 15:27:31] [    INFO] [scanlogger      ] --- 
+[2017-06-29 15:27:31] [    INFO] [scanlogger      ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc-Test\log\20170629_Scan.log'
+[2017-06-29 15:28:58] [    INFO] [scanlogger      ] --- 
+[2017-06-29 15:28:58] [    INFO] [scanlogger      ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc-Test\log\20170629_Scan.log'
+[2017-06-29 15:29:18] [    INFO] [scanlogger      ] --- 
+[2017-06-29 15:29:18] [    INFO] [scanlogger      ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc-Test\log\20170629_Scan.log'
+[2017-06-29 15:29:27] [    INFO] [scanlogger      ] --- 
+[2017-06-29 15:29:27] [    INFO] [scanlogger      ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc-Test\log\20170629_Scan.log'
+[2017-06-29 16:00:01] [    INFO] [scanlogger      ] --- 
+[2017-06-29 16:00:01] [    INFO] [scanlogger      ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc-Test\log\20170629_Scan.log'
+[2017-06-29 16:00:22] [    INFO] [scanlogger      ] --- 
+[2017-06-29 16:00:22] [    INFO] [scanlogger      ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc-Test\log\20170629_Scan.log'
+[2017-06-29 16:01:46] [    INFO] [scanlogger      ] --- 
+[2017-06-29 16:01:46] [    INFO] [scanlogger      ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc-Test\log\20170629_Scan.log'
+[2017-06-29 16:01:54] [    INFO] [FoxVc Ver 1.2.4 ] --- [+] Ready for Scan Drive : E:\bak
+[2017-06-29 16:02:00] [    INFO] [FoxVc Ver 1.2.4 ] --- [+] Cannot detect Virus !
+[2017-06-29 16:02:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\asd.zip'
+[2017-06-29 16:02:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\install.zip'
+[2017-06-29 16:02:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\Invitation letter for KANG JIHOON-sealed.pdf'
+[2017-06-29 16:02:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\Invitation letter for LEE SANGYOON-sealed.pdf'
+[2017-06-29 16:02:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\report.json'
+[2017-06-29 16:02:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\r_report.json'
+[2017-06-29 16:02:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\sample.txt'
+[2017-06-29 16:02:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\SvnSync.zip'
+[2017-06-29 16:02:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\test.pdf'
+[2017-06-29 16:02:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\test.txt'
+[2017-06-29 16:02:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\이름없음_01.zip'
+[2017-06-29 16:02:54] [    INFO] [scanlogger      ] --- 
+[2017-06-29 16:02:54] [    INFO] [scanlogger      ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc-Test\log\20170629_Scan.log'
+[2017-06-29 16:02:58] [    INFO] [FoxVc Ver 1.2.4 ] --- [+] Ready for Scan Drive : E:\bak
+[2017-06-29 16:03:00] [    INFO] [FoxVc Ver 1.2.4 ] --- [+] Cannot detect Virus !
+[2017-06-29 16:03:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\asd.zip'
+[2017-06-29 16:03:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\install.zip'
+[2017-06-29 16:03:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\Invitation letter for KANG JIHOON-sealed.pdf'
+[2017-06-29 16:03:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\Invitation letter for LEE SANGYOON-sealed.pdf'
+[2017-06-29 16:03:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\report.json'
+[2017-06-29 16:03:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\r_report.json'
+[2017-06-29 16:03:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\sample.txt'
+[2017-06-29 16:03:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\SvnSync.zip'
+[2017-06-29 16:03:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\test.pdf'
+[2017-06-29 16:03:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\test.txt'
+[2017-06-29 16:03:00] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\이름없음_01.zip'
