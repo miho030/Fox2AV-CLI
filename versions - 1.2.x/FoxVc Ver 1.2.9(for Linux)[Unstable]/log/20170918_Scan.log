@@ -1,0 +1,19 @@
+[2017-09-18 08:01:11] [    INFO] [scanlogger      ] --- 
+[2017-09-18 08:01:11] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.8\log\20170918_Scan.log'
+[2017-09-18 08:01:14] [    INFO] [foxvcver1.2.8   ] --- [+] Ready for Scan Drive : K:\
+[2017-09-18 08:01:34] [    INFO] [foxvcver1.2.8   ] --- 		[-] Detected Virus file : 'K:\\Tested.txt'
+[2017-09-18 08:01:42] [    INFO] [foxvcver1.2.8   ] --- [+] Virus File Removed
+[2017-09-18 08:01:42] [    INFO] [foxvcver1.2.8   ] --- 		[-] Removed file : K:\\Tested.txt
+[2017-09-18 08:02:01] [    INFO] [scanlogger      ] --- 
+[2017-09-18 08:02:01] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.8\log\20170918_Scan.log'
+[2017-09-18 08:02:06] [    INFO] [scanlogger      ] --- 
+[2017-09-18 08:02:06] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.8\log\20170918_Scan.log'
+[2017-09-18 08:04:11] [    INFO] [scanlogger      ] --- 
+[2017-09-18 08:04:11] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVcVer1.2.8\log\20170918_Scan.log'
+[2017-09-18 08:04:16] [    INFO] [foxvcver1.2.8   ] --- [+] Ready for Scan Drive : K:\
+[2017-09-18 08:04:21] [    INFO] [foxvcver1.2.8   ] --- 		[-] Detected Virus file : 'K:\\Tested.txt'
+[2017-09-18 08:04:25] [    INFO] [foxvcver1.2.8   ] --- [+] Virus File Removed
+[2017-09-18 08:04:25] [    INFO] [foxvcver1.2.8   ] --- 		[-] Removed file : K:\\Tested.txt
+[2017-09-18 08:08:58] [    INFO] [scanlogger      ] --- 
+[2017-09-18 08:08:58] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.8\log\20170918_Scan.log'
+[2017-09-18 08:09:00] [    INFO] [foxvc ver 1.2.8 ] --- [+] Ready for Scan Drive : C:\

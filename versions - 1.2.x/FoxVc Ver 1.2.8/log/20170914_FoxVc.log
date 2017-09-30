@@ -1,0 +1,16 @@
+[2017-09-14 17:53:55] [    INFO] [logger          ] --- 
+[2017-09-14 17:53:55] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\ST\FoxVc\FoxVc Ver 1.2.6\log\20170914_FoxVc.log'
+[2017-09-14 17:55:44] [    INFO] [logger          ] --- 
+[2017-09-14 17:55:44] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\ST\FoxVc\FoxVc Ver 1.2.6\log\20170914_FoxVc.log'
+[2017-09-14 17:56:26] [    INFO] [logger          ] --- 
+[2017-09-14 17:56:26] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\ST\FoxVc\FoxVc Ver 1.2.6\log\20170914_FoxVc.log'
+[2017-09-14 17:56:44] [    INFO] [logger          ] --- 
+[2017-09-14 17:56:44] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\ST\FoxVc\FoxVc Ver 1.2.6\log\20170914_FoxVc.log'
+[2017-09-14 17:56:47] [    INFO] [foxvc ver 1.2.6 ] --- Ready for Scan Drive : E:\
+[2017-09-14 17:56:48] [    INFO] [foxvc ver 1.2.6 ] --- Cannot detect Virus !
+[2017-09-14 17:57:45] [    INFO] [logger          ] --- 
+[2017-09-14 17:57:45] [    INFO] [logger          ] --- Start to log-record in 'C:\Users\miho0\Desktop\ST\FoxVc\FoxVc Ver 1.2.6\log\20170914_FoxVc.log'
+[2017-09-14 17:57:47] [    INFO] [foxvc ver 1.2.6 ] --- Ready for Scan Drive : E:\
+[2017-09-14 17:57:48] [    INFO] [foxvc ver 1.2.6 ] --- Detected Virus file : 'E:\bak\Eicar.txt'
+[2017-09-14 17:57:52] [    INFO] [foxvc ver 1.2.6 ] --- Virus File Removed
+[2017-09-14 17:57:52] [    INFO] [foxvc ver 1.2.6 ] --- Removed file : E:\bak\Eicar.txt

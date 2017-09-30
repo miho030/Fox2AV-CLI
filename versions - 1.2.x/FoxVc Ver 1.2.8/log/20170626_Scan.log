@@ -1,0 +1,71 @@
+[2017-06-26 13:47:28] [    INFO] [scanlogger      ] --- 
+[2017-06-26 13:47:28] [    INFO] [scanlogger      ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc Ver 1.2.4_edit\log\20170626_Scan.log'
+[2017-06-26 13:47:31] [    INFO] [FoxVc Ver 1.2.4 ] --- [+] Ready for Scan Drive : E:\bak
+[2017-06-26 13:47:32] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] Detected Virus file : 'E:\bak\sample.txt'
+[2017-06-26 13:47:35] [    INFO] [FoxVc Ver 1.2.4 ] --- [+] Virus File Removed
+[2017-06-26 13:47:35] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] Removed file : E:\bak\sample.txt
+[2017-06-26 13:48:10] [    INFO] [scanlogger      ] --- 
+[2017-06-26 13:48:10] [    INFO] [scanlogger      ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc Ver 1.2.4_edit\log\20170626_Scan.log'
+[2017-06-26 13:48:12] [    INFO] [FoxVc Ver 1.2.4 ] --- [+] Ready for Scan Drive : E:\bak
+[2017-06-26 13:48:14] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] Detected Virus file : 'E:\bak\sample.txt'
+[2017-06-26 13:48:16] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] Your System Will be Danger. Virus File is still exist.
+[2017-06-26 13:48:37] [    INFO] [scanlogger      ] --- 
+[2017-06-26 13:48:37] [    INFO] [scanlogger      ] --- Start to log-record in 'D:\PythonEnv\project.example\FoxVc Ver 1.2.4_edit\log\20170626_Scan.log'
+[2017-06-26 13:48:39] [    INFO] [FoxVc Ver 1.2.4 ] --- [+] Ready for Scan Drive : E:\bak
+[2017-06-26 13:48:41] [    INFO] [FoxVc Ver 1.2.4 ] --- [+] Cannot detect Virus !
+[2017-06-26 13:48:41] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\asd.zip'
+[2017-06-26 13:48:41] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\install.zip'
+[2017-06-26 13:48:41] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\Invitation letter for KANG JIHOON-sealed.pdf'
+[2017-06-26 13:48:41] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\Invitation letter for LEE SANGYOON-sealed.pdf'
+[2017-06-26 13:48:41] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\report.json'
+[2017-06-26 13:48:41] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\r_report.json'
+[2017-06-26 13:48:41] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\sample.txt'
+[2017-06-26 13:48:41] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\SvnSync.zip'
+[2017-06-26 13:48:41] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\test.pdf'
+[2017-06-26 13:48:41] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\test.txt'
+[2017-06-26 13:48:41] [    INFO] [FoxVc Ver 1.2.4 ] --- 		[-] This file is not Virus : 'E:\bak\이름없음_01.zip'
+[2017-06-26 17:16:38] [    INFO] [scanlogger      ] --- 
+[2017-06-26 17:16:38] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_Scan.log'
+[2017-06-26 17:20:35] [    INFO] [foxvc ver 1.2.4 ] --- [+] Ready for Scan Drive : C:\
+[2017-06-26 17:23:50] [    INFO] [scanlogger      ] --- 
+[2017-06-26 17:23:50] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_Scan.log'
+[2017-06-26 17:23:55] [    INFO] [foxvc ver 1.2.4 ] --- [+] Ready for Scan Drive : G:\
+[2017-06-26 17:23:55] [    INFO] [foxvc ver 1.2.4 ] --- [+] Cannot detect Virus !
+[2017-06-26 17:23:55] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\\pycharm.sh'
+[2017-06-26 17:23:55] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\\eicar.txt'
+[2017-06-26 17:23:55] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\\TestFile.txt'
+[2017-06-26 17:23:55] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\System Volume Information\WPSettings.dat'
+[2017-06-26 17:23:55] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\System Volume Information\IndexerVolumeGuid'
+[2017-06-26 17:24:44] [    INFO] [scanlogger      ] --- 
+[2017-06-26 17:24:44] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_Scan.log'
+[2017-06-26 17:24:47] [    INFO] [foxvc ver 1.2.4 ] --- [+] Ready for Scan Drive : C:\
+[2017-06-26 17:28:08] [    INFO] [scanlogger      ] --- 
+[2017-06-26 17:28:08] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_Scan.log'
+[2017-06-26 17:28:11] [    INFO] [foxvc ver 1.2.4 ] --- [+] Ready for Scan Drive : E:\
+[2017-06-26 17:42:59] [    INFO] [scanlogger      ] --- 
+[2017-06-26 17:42:59] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_Scan.log'
+[2017-06-26 17:43:02] [    INFO] [foxvc ver 1.2.4 ] --- [+] Ready for Scan Drive : E:\
+[2017-06-26 17:43:10] [    INFO] [scanlogger      ] --- 
+[2017-06-26 17:43:10] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_Scan.log'
+[2017-06-26 17:43:12] [    INFO] [foxvc ver 1.2.4 ] --- [+] Ready for Scan Drive : G:\
+[2017-06-26 17:43:12] [    INFO] [foxvc ver 1.2.4 ] --- [+] Cannot detect Virus !
+[2017-06-26 17:43:12] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\\pycharm.sh'
+[2017-06-26 17:43:12] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\\eicar.txt'
+[2017-06-26 17:43:12] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\\TestFile.txt'
+[2017-06-26 17:43:12] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\System Volume Information\WPSettings.dat'
+[2017-06-26 17:43:12] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\System Volume Information\IndexerVolumeGuid'
+[2017-06-26 21:44:57] [    INFO] [scanlogger      ] --- 
+[2017-06-26 21:44:57] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_Scan.log'
+[2017-06-26 21:45:00] [    INFO] [foxvc ver 1.2.4 ] --- [+] Ready for Scan Drive : C:\
+[2017-06-26 23:10:27] [    INFO] [scanlogger      ] --- 
+[2017-06-26 23:10:27] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_Scan.log'
+[2017-06-26 23:10:32] [    INFO] [foxvc ver 1.2.4 ] --- [+] Ready for Scan Drive : G:\
+[2017-06-26 23:10:34] [    INFO] [foxvc ver 1.2.4 ] --- [+] Cannot detect Virus !
+[2017-06-26 23:10:34] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\\pycharm.sh'
+[2017-06-26 23:10:34] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\\eicar.txt'
+[2017-06-26 23:10:34] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\\TestFile.txt'
+[2017-06-26 23:10:34] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\\BOOTEX.LOG'
+[2017-06-26 23:10:34] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\System Volume Information\WPSettings.dat'
+[2017-06-26 23:10:34] [    INFO] [foxvc ver 1.2.4 ] --- 		[-] This file is not Virus : 'G:\System Volume Information\IndexerVolumeGuid'
+[2017-06-26 23:14:50] [    INFO] [scanlogger      ] --- 
+[2017-06-26 23:14:50] [    INFO] [scanlogger      ] --- Start to log-record in 'C:\Users\miho0\Desktop\FoxVc Ver 1.2.4_edit\log\20170626_Scan.log'
