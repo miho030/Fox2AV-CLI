@@ -34,9 +34,6 @@ from lib.scanlogger import ScanLoggingConfigure
 #=======================================================================================
 # 주요 상수 선언
 #=======================================================================================
-FOX_VERSION = '1.2.6'
-FOX_BUILDDATA = '2017'
-FOX_LASTYEAR = FOX_BUILDDATA[len(FOX_BUILDDATA)-4:]
 
 # global variable
 File_Size_List = []
