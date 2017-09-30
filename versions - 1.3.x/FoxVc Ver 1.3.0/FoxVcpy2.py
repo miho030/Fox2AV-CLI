@@ -39,7 +39,7 @@ from lib.scanlogger import ScanLoggingConfigure
 # +=======================================================================================+
 # 주요 변수 선언 시작
 # +=======================================================================================+
-
+# set logger
 logger = LoggingConfigure()
 slogger = ScanLoggingConfigure()
 
