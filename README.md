@@ -36,7 +36,7 @@ We recommend **FoxVc version 1.2.8 or later.**
       **2. New Cure Module is created.**  
         >> You can choose remove or neglect malware, with malware's installed_Directory_path.  
         
-    ### 1-1. FoxVc Ver 1.2.81 >> New update files will be uploaded on 2017-10-  
+  ### 1-1. FoxVc Ver 1.2.81 >> New update files will be uploaded on 2017-10-  
   **&&This version supported new functuon.&&**.  
         1. Malware detections for Windows drive!  
           >> Support malware detection for windows system files!  
