@@ -24,7 +24,7 @@ We recommend **FoxVc version 1.2.8 or later.**
 
 ## New Informations for Update:
   
-  ### 1. FoxVc Ver 1.2.8 [Successefully updated on 2017-09-16 AM.12:24]   
+  ### 1. FoxVc Ver 1.2.8 >> [Successefully updated on 2017-09-16 AM.12:24]   
   && New Version[1.2.8] will be updated on ** [Succesefully updated on 2017-09-18 FM.5:12] &&**  
       **1. Maleware Database "sort module" is updated.**  
         + "File_Hash_List" Type is modificated.  
@@ -32,15 +32,15 @@ We recommend **FoxVc version 1.2.8 or later.**
       **2. New Cure Module is created.**  
         + You can choose remove or neglect malware, with malware's installed_Directory_path.  
         
-  ### 1-1. FoxVc Ver 1.2.81 >> New update files will be uploaded on 2017-10-   
-          
+  ### 1-1. FoxVc Ver 1.2.81 >> New update files will be uploaded on 2017-10-.
+          
   1. Malware detections for Windows drive!  
     >> upport malware detection for windows system files!  
     >> dministrator permission requesting function is updated!  
   2. Logging_Level is updated! (Info, Warning, critical, error)
         
          
-  ### 2. FoxVc Ver 1.2.9 >> New update files will be uploaded on 2017-09-24.  
+  ### 2. FoxVc Ver 1.2.9 >> [Successefully updated on 2017-09-24 PM.4:53] 
   **1. Support Various Operating System -> Linux, Unix environment.**    
         >> Linux, Unix root permission requesting function is updated.[new function]  
         >> Already tested on Ubuntu 16.04LTS  
@@ -77,8 +77,8 @@ We recommend **FoxVc version 1.2.8 or later.**
                 
   
   
-### 3. FoxVc Ver 1.3.0 >> New update files will be uploaded on 2017-10-  
-**&&This version supperted not only python 2 users but also python 3 users! &&**  
+### 3. FoxVc Ver 1.3.0 >> [Successefully updated on 2017-09-30 AM:2:23] 
+**&&This version supperted not only python 2 users but also python 3 users! &&**  
 1. New functions are supported!  
    >> The source code has been updated to make Python users more than 2 versions available through grammatical modifications.  
  
