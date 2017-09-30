@@ -7,3 +7,9 @@ FoxVc Ver 1.2.9 updated on 2017-09-30
 	     	         And import optimized modules according to your Python version.
 	>> Separating and Simplifying Modules
 	>> and starting stablization!
+	
+2. start Stabilize.
+	>> Stabilized codes will be uploaded on 2017-10-01
+	>> From version 1.3.0, it is uploaded using branch.
+	>> All subsequent 1.3.x versions will be uploaded in 1.3.0.
+		>> git checkout, merge
