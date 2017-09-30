@@ -23,8 +23,8 @@ We recommend **FoxVc version 1.2.8 or later.**
 
 ## New Informations for Update:
   
-  ### 1. FoxVc Ver 1.2.8 >> [Successefully updated on 2017-09-16 AM.12:24]   
-  && New Version[1.2.8] will be updated on ** [Succesefully updated on 2017-09-18 FM.5:12] &&**  
+### 1. FoxVc Ver 1.2.8 >> [Successefully updated on 2017-09-16 AM.12:24]   
+&& New Version[1.2.8] will be updated on ** [Succesefully updated on 2017-09-18 FM.5:12] &&**  
   1. Maleware Database "sort module" is updated.  
     >> "File_Hash_List" Type is modificated.  
       >> I removed newline characters for stabilize malware detection.  
@@ -32,22 +32,22 @@ We recommend **FoxVc version 1.2.8 or later.**
         >> You can choose remove or neglect malware, with malware's installed_Directory_path.  
           >>
         
-  ### 1-1. FoxVc Ver 1.2.81 >> New update files will be uploaded on 2017-10-.
-          
+### 1-1. FoxVc Ver 1.2.81 >> New update files will be uploaded on 2017-10-.
   1. Malware detections for Windows drive!  
     >> upport malware detection for windows system files!  
-    >> dministrator permission requesting function is updated!  
+      >> dministrator permission requesting function is updated!  
   2. Logging_Level is updated! (Info, Warning, critical, error)
         
          
-  ### 2. FoxVc Ver 1.2.9 >> [Successefully updated on 2017-09-24 PM.4:53] 
+### 2. FoxVc Ver 1.2.9 >> [Successefully updated on 2017-09-24 PM.4:53] 
   **1. Support Various Operating System -> Linux, Unix environment.**    
         >> Linux, Unix root permission requesting function is updated.[new function]  
-        >> Already tested on Ubuntu 16.04LTS  
-        >> Testing on OpenBSD, Solalis at imao.  
+          >> Already tested on Ubuntu 16.04LTS  
+            >> Testing on OpenBSD, Solalis at imao.  
+          
           **New Supporting OSs are :**  
-           
-            > + Ubuntu 16.04.1 LTS-i386,EM64T  
+           >
+              + Ubuntu 16.04.1 LTS-i386,EM64T  
               + Ubuntu 16.04.1 Server-i386,EM64T  
               + Ubuntu 12-i386,EM64T  
               + CentOS-Testing  
@@ -63,9 +63,9 @@ We recommend **FoxVc version 1.2.8 or later.**
 ### A TEST HAS ALREADY BEEN COMPLETED IN UBUNTU, CENTOS, OPENBSD, SOLALIS, KALI, BT.  
   **TESTING ON TAILS, ELEMENT, SUSE AT IMAO.**    
   
-  # Warning          
-  **This scripts are unstable. so i upload various beta scripts after 1.2.9, like 1.2.91, 1.2.92, 1.2.93 ~  
-  So, You can see the newly modified source code in the "Test Code for Linux ver" folder before the stable FoxVc 1.2.9 version is uploaded.** 
+# Warning          
+**This scripts are unstable. so i upload various beta scripts after 1.2.9, like 1.2.91, 1.2.92, 1.2.93 ~  
+So, You can see the newly modified source code in the "Test Code for Linux ver" folder before the stable FoxVc 1.2.9 version is uploaded.** 
 
   ### [INFO] Malware Database is updated!  
   **&& New malware DB will be updated on 2017-10-&&**  
@@ -81,14 +81,15 @@ We recommend **FoxVc version 1.2.8 or later.**
 **&&This version supperted not only python 2 users but also python 3 users! &&**  
 1. New functions are supported!  
    >> The source code has been updated to make Python users more than 2 versions available through grammatical modifications.  
- 
-        
+    >> The original version uses sys.version_info to scan the installed version of Python on your system and import and use optimized code for each version.  
+      >> branch version uses Lib2to3 to build python2 versions of FoxVc and python3 versions of FoxVc separately.  
+
 ### 4. FoxVc Ver 1.3.1 >> New update files will be uploaded on 2017-10-    
 **&& This version supports "Updated-UI" for easier checking and handling resulted-malwares. &&**  
-**1. UI update -> focusing on checking resulted-malwares.**  
-     >> It take forms like string list return-type.  
-**2. New function supported.**  
-     >> New version of Cure module.    
+1. UI update -> focusing on checking resulted-malwares.  
+  >> It take forms like string list return-type.  
+2. New function supported.  
+  >> New version of Cure module.    
             
 ### 5. FoxVc Ver 1.3.2 >> New update files will be uploaded on 2017-10-.  
 **&& This version supports "Admin management UI". &&**   
