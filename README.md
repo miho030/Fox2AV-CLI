@@ -28,38 +28,39 @@ We recommend **FoxVc version 1.2.8 or later.**
   **&& This verion starts new function. &&**  
   && New Version[1.2.8] will be updated on ** [Succesefully updated on 2017-09-18 FM.5:12] &&**  
       **1. Maleware Database "sort module" is updated.**  
-        >> "File_Hash_List" Type is modificated.  
-        >> I removed newline characters for stabilize malware detection.  
+        + "File_Hash_List" Type is modificated.  
+        + I removed newline characters for stabilize malware detection.  
       **2. New Cure Module is created.**  
-        >> You can choose remove or neglect malware, with malware's installed_Directory_path.  
+        + You can choose remove or neglect malware, with malware's installed_Directory_path.  
         
   ### 1-1. FoxVc Ver 1.2.81 >> New update files will be uploaded on 2017-10-  
   **&&This version supported new functuon.&&**.  
         1. Malware detections for Windows drive!  
-          >> Support malware detection for windows system files!  
-          >> Administrator permission requesting function is updated!  
+          + upport malware detection for windows system files!  
+          + dministrator permission requesting function is updated!  
         2. Logging_Level is updated! (Info, Warning, critical, error)
         
          
   ### 2. FoxVc Ver 1.2.9 >> New update files will be uploaded on 2017-09-24.  
   **&& This verion starts new functions. &&**    
         **1. Support Various Operating System -> Linux, Unix environment.**    
-          >> Linux, Unix root permission requesting function is updated.[new function]  
-          >> Already tested on Ubuntu 16.04LTS  
-          >> Testing on OpenBSD, Solalis at imao.  
+          + Linux, Unix root permission requesting function is updated.[new function]  
+          + Already tested on Ubuntu 16.04LTS  
+          + Testing on OpenBSD, Solalis at imao.  
            **New Supporting OSs are :**  
-            **+ Ubuntu 16.04.1 LTS-i386,EM64T  
-            + Ubuntu 16.04.1 Server-i386,EM64T  
-            + Ubuntu 12-i386,EM64T  
-            + CentOS-Testing  
-            + OpenBSD-i386,EM64T  
-            + OpenSuSe-i386,EM64T  
-            + Kali Linux2.0-i386,EM64T  
-            + Kali Linus1.1.0-i386,EM64T  
-            + BackTrack 5 R3-amd64  
-            + BackTrack 5 R3-x32  
-            + Tails OS-i386,EM64T  
-            + Element OS-i386,EM64T**     
+           
+            > + Ubuntu 16.04.1 LTS-i386,EM64T  
+              + Ubuntu 16.04.1 Server-i386,EM64T  
+              + Ubuntu 12-i386,EM64T  
+              + CentOS-Testing  
+              + OpenBSD-i386,EM64T  
+              + OpenSuSe-i386,EM64T  
+              + Kali Linux2.0-i386,EM64T  
+              + Kali Linus1.1.0-i386,EM64T  
+              + BackTrack 5 R3-amd64  
+              + BackTrack 5 R3-x32  
+              + Tails OS-i386,EM64T  
+              + Element OS-i386,EM64T**     
 
 ### A TEST HAS ALREADY BEEN COMPLETED IN UBUNTU, CENTOS, OPENBSD, SOLALIS, KALI, BT.  
   **TESTING ON TAILS, ELEMENT, SUSE AT IMAO.**    
@@ -72,37 +73,38 @@ We recommend **FoxVc version 1.2.8 or later.**
   **&& New malware DB will be updated on 2017-10-&&**  
         1. Currently Variant malwares are updated!  
         2. New Function will start supporting!  
-          >> Cloud-Based ASD(Anlab Smart Defence) Analysis.  
-          >> ASD cloud automatic malware analysis system.  
-            >>>> This service structure is a new analytical technique developed by anlab to respond to new and variant malwares.    
+         + Cloud-Based ASD(Anlab Smart Defence) Analysis.  
+         + ASD cloud automatic malware analysis system.  
+         > This service structure is a new analytical technique developed by anlab to respond to new and variant malwares.    
                 
   
   
   ### 3. FoxVc Ver 1.3.0 >> New update files will be uploaded on 2017-10-  
   **&&This version supperted not only python 2 users but also python 3 users! &&**  
         **1. New functions are supported!  
-          >> The source code has been updated to make Python users more than 2 versions available through grammatical modifications.  
+          + The source code has been updated to make Python users more than 2 versions available through grammatical modifications.  
  
   
         
   ### 4. FoxVc Ver 1.3.1 >> New update files will be uploaded on 2017-10-    
   **&& This version supports "Updated-UI" for easier checking and handling resulted-malwares. &&**  
         **1. UI update -> focusing on checking resulted-malwares.**  
-          >> It take forms like string list return-type.  
+          + It take forms like string list return-type.  
         **2. New function supported.**  
-          >> New version of Cure module.    
+          + New version of Cure module.    
             
   ### 5. FoxVc Ver 1.3.2 >> New update files will be uploaded on 2017-10-.  
   **&& This version supports "Admin management UI". &&**   
         **1. Ui will be updated for administrator.**  
-          >> Admin Permission must be needed.    
+          + Admin Permission must be needed.    
             
   ### 6. FoxVc Ver 1.3.3 >> New update files will be uploaded on 2017-10-.  
   **&& This version supports "Html page for checking and management malware's md5_hash, size, directory_path." &&**      
-        **1. New function will be supported.**      
-            >> Html page for checking and management malwares md5_hash, size, directory_path.
-            >> This function is focusing on malware analysis.
-            >> Page will be made html, you can check  malwares name, md5_hash, installed_malware_directory_path, link for connect to https://www.virustotal.com/
+        **1. New function will be supported.**
+        
+            + Html page for checking and management malwares md5_hash, size, directory_path.
+            + This function is focusing on malware analysis.
+            + Page will be made html, you can check  malwares name, md5_hash, installed_malware_directory_path, link for connect to https://www.virustotal.com/
             
             
             
