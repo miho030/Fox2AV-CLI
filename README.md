@@ -100,9 +100,9 @@ We recommend **FoxVc version 1.2.8 or later.**
 ### 6. FoxVc Ver 1.3.3 >> New update files will be uploaded on 2017-10-.  
 **&& This version supports "Html page for checking and management malware's md5_hash, size, directory_path." &&**      
 **1. New function will be supported.**  
-    >>This function is focusing on malware analysis for System manager
-      >>Html page for checking and management malwares md5_hash, size, directory_path.
-      >>Page will be made html, you can check  malwares name, md5_hash, installed_malware_directory_path, link for connect to https://www.virustotal.com/
+    >>This function is focusing on malware analysis for System manager.  
+      >>Html page for checking and management malwares md5_hash, size, directory_path.  
+      >>Page will be made html, you can check  malwares name, md5_hash, installed_malware_directory_path, link for connect to https://www.virustotal.com/  
             
             
             
