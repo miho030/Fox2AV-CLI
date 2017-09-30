@@ -78,30 +78,29 @@ We recommend **FoxVc version 1.2.8 or later.**
   
   
 ### 3. FoxVc Ver 1.3.0 >> New update files will be uploaded on 2017-10-  
-  **&&This version supperted not only python 2 users but also python 3 users! &&**  
-        **1. New functions are supported!  
-          >> The source code has been updated to make Python users more than 2 versions available through grammatical modifications.  
+**&&This version supperted not only python 2 users but also python 3 users! &&**  
+1. New functions are supported!  
+   >> The source code has been updated to make Python users more than 2 versions available through grammatical modifications.  
  
-  
         
-  ### 4. FoxVc Ver 1.3.1 >> New update files will be uploaded on 2017-10-    
-  **&& This version supports "Updated-UI" for easier checking and handling resulted-malwares. &&**  
-        **1. UI update -> focusing on checking resulted-malwares.**  
-          >> It take forms like string list return-type.  
-        **2. New function supported.**  
-          >> New version of Cure module.    
+### 4. FoxVc Ver 1.3.1 >> New update files will be uploaded on 2017-10-    
+**&& This version supports "Updated-UI" for easier checking and handling resulted-malwares. &&**  
+**1. UI update -> focusing on checking resulted-malwares.**  
+     >> It take forms like string list return-type.  
+**2. New function supported.**  
+     >> New version of Cure module.    
             
-  ### 5. FoxVc Ver 1.3.2 >> New update files will be uploaded on 2017-10-.  
-  **&& This version supports "Admin management UI". &&**   
-        **1. Ui will be updated for administrator.**  
-          >> Admin Permission must be needed.    
+### 5. FoxVc Ver 1.3.2 >> New update files will be uploaded on 2017-10-.  
+**&& This version supports "Admin management UI". &&**   
+**1. Ui will be updated for administrator.**  
+     >> Admin Permission must be needed.    
             
-  ### 6. FoxVc Ver 1.3.3 >> New update files will be uploaded on 2017-10-.  
-  **&& This version supports "Html page for checking and management malware's md5_hash, size, directory_path." &&**      
-        **1. New function will be supported.**
-             >>Html page for checking and management malwares md5_hash, size, directory_path.
-             >>This function is focusing on malware analysis.
-             >>Page will be made html, you can check  malwares name, md5_hash, installed_malware_directory_path, link for connect to https://www.virustotal.com/
+### 6. FoxVc Ver 1.3.3 >> New update files will be uploaded on 2017-10-.  
+**&& This version supports "Html page for checking and management malware's md5_hash, size, directory_path." &&**      
+**1. New function will be supported.**
+     >>Html page for checking and management malwares md5_hash, size, directory_path.
+     >>This function is focusing on malware analysis.
+       >>Page will be made html, you can check  malwares name, md5_hash, installed_malware_directory_path, link for connect to https://www.virustotal.com/
             
             
             
