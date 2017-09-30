@@ -1,8 +1,6 @@
 # New Opensource Vaccine, FoxVc.  
 # Warning
   
-#### 시험기간과 가족여행의 병행으로 현 시점(2017-09-29)부터 10월 11일까지 새로운 버전 업로드가 일시중단 됩니다.  다만 이미 배포된 파일의 관리와 사이트 유지보수는 지속적으로 시행될 예정입니다. 새로운 1.3.0 버전은 09-30에 업로드될 예정입니다.  
-
 **1.2.7버전 이하의 FoxVC은 가능하면 사용하지 마십시오.**  
 악성코드 탐지 안정성에 문제가 있습니다.   
 되도록이면 **1.2.8버전 이상의 FoxVc**을 추천합니다.  
@@ -10,7 +8,6 @@
 **Do not use FoxVC versions below 1.2.7 if possible.**     
 There is a problem with malware detection stability.   
 We recommend **FoxVc version 1.2.8 or later.**    
-
 
 
 ## HI, Im noob Opensource Program coder, Nicht.
@@ -106,13 +103,20 @@ We recommend **FoxVc version 1.2.8 or later.**
             >> Html page for checking and management malwares md5_hash, size, directory_path.
             >> This function is focusing on malware analysis.
             >> Page will be made html, you can check  malwares name, md5_hash, installed_malware_directory_path, link for connect to https://www.virustotal.com/
-     
-      
-### Im planning to supporting new function, Virtual dynamic analysis(Heuristic). :D  
+            
+            
+            
+            
+## All new notifications and informations.  
+### 관리방식 교체로 인해 기존 저장소를 삭제하고 동일이름의 새로운 저장소로 업그레이드 되었습니다. 
+#### 시험기간과 가족여행의 병행으로 현 시점(2017-09-29)부터 10월 11일까지 새로운 버전 업로드가 일시중단 됩니다.  다만 이미 배포된 파일의 관리와 사이트 유지보수는 지속적으로 시행될 예정입니다. 새로운 1.3.0 버전은 09-30에 업로드될 예정입니다.  
 #### 안정화된 윈도우버전은 pyinstaller를 통해 exe파일로 압축되며, 안정된 리눅스/유닉스버전은 sh파일로 압축될 예정입니다.
-## This Document made by Nicht, using "Markdown Language"   
+### planning to supporting new function, Virtual dynamic analysis(Heuristic). :D  
+     
 Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/  
  
+## This Document made by Nicht, using "Markdown Language" 
+
 ## Informations of Coder    
  
  Email : miho0_0@naver.com  
