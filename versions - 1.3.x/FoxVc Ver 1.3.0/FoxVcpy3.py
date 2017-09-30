@@ -4,11 +4,16 @@
 # Author_Helper : Republic of Korea, KyungGido, Kim Min Seok
 # youtube : anonymous0korea0@gmail.com ;;;; tayaka
 # Email : miho0_0@naver.com
-
+# +=======================================================================================+
+# 이 파일은 파이썬 3 이상의 버전이 설치되어있는 시스템 사용자를 위한 모듈임.
+# Python 3.6 기준의 문법으로 작성되었음.
+#
+#
+# 주요 모듈 임포트
+# +=======================================================================================+
 import os
 import sys
 import time
-import logging, logging.handlers
 
 if os.name == 'nt':
     from ctypes import wintypes
@@ -33,6 +38,12 @@ from FoxInterface.FoxConst import Fox_ACTION_QUIT
 from lib.logger import LoggingConfigure
 from lib.scanlogger import ScanLoggingConfigure
 
+# +=======================================================================================+
+# 주요 변수 선언 시작
+# +=======================================================================================+
+logger = LoggingConfigure()
+slogger = ScanLoggingConfigure()
+
 # global variable
 File_Size_List = []
 File_Hash_List = []
@@ -40,6 +51,10 @@ File_Name_List = []
 
 INFECTION = [] # 감염 파일 리스트
 N_INFECTION = [] # 감염 파일 리스트
+
+# +=======================================================================================+
+# 주요 변수 선언 끝
+# +=======================================================================================+
 
 
 def FoxVcPyVer3():
@@ -61,27 +76,27 @@ def FoxVcPyVer3():
                 INFECTION.append(fname)
 
     for infect in INFECTION:
-        logging.info("Detected Virus file : '%s'" % (infect))
-        logging.info("\t\t[-] Detected Virus file : '%s'" % (infect))
+        logger.info("Detected Virus file : '%s'" % (infect))
+        slogger.info("\t\t[-] Detected Virus file : '%s'" % (infect))
 
     if not INFECTION:
-        logging.warning("Cannot detect Virus !")
-        logging.warning("[+] Cannot detect Virus !")
+        logger.warning("Cannot detect Virus !")
+        slogger.warning("[+] Cannot detect Virus !")
         for file in N_INFECTION:
-            logging.info("\t\t[-] This file is not Virus : '%s'" % str(file))
+            slogger.info("\t\t[-] This file is not Virus : '%s'" % str(file))
 
 
     else:
         time.sleep(1)
         if str(raw_input("Cure the Virus Now? [y,n] : ")) == "y":
-            logging.info("Virus File Removed")  # 삭제 완료시 이 구문 출력
-            logging.info("[+] Virus File Removed")  # 삭제 완료시 이 구문 출력
+            logger.info("Virus File Removed")  # 삭제 완료시 이 구문 출력
+            slogger.info("[+] Virus File Removed")  # 삭제 완료시 이 구문 출력
 
             for infectedFileName in INFECTION:  # for문으로 리스트를 돌려서 삭제
                 os.remove(infectedFileName)  # 리스트 내의 경로를 삭제함.
-                logging.warning("Removed file : %s" % (infectedFileName))  # 삭제 완료시 이 구문 출력
-                logging.warning("\t\t[-] Removed file : %s" % (infectedFileName))  # 삭제 완료시 이 구문 출력
+                logger.warning("Removed file : %s" % (infectedFileName))  # 삭제 완료시 이 구문 출력
+                slogger.warning("\t\t[-] Removed file : %s" % (infectedFileName))  # 삭제 완료시 이 구문 출력
 
         else:
-            logging.critical("Your System Will be Danger. Virus File is still exist.")
-            logging.critical("\t\t[-] Your System Will be Danger. Virus File is still exist.")
+            logger.critical("Your System Will be Danger. Virus File is still exist.")
+            slogger.critical("\t\t[-] Your System Will be Danger. Virus File is still exist.")
