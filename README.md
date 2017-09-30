@@ -24,8 +24,7 @@ We recommend **FoxVc version 1.2.8 or later.**
 
 ## New Informations for Update:
   
-  ### 1. FoxVc Ver 1.2.8 [Successefully updated on 2017-09-16 AM.12:24]  
-  **&& This verion starts new function. &&**  
+  ### 1. FoxVc Ver 1.2.8 [Successefully updated on 2017-09-16 AM.12:24]   
   && New Version[1.2.8] will be updated on ** [Succesefully updated on 2017-09-18 FM.5:12] &&**  
       **1. Maleware Database "sort module" is updated.**  
         + "File_Hash_List" Type is modificated.  
@@ -101,10 +100,9 @@ We recommend **FoxVc version 1.2.8 or later.**
   ### 6. FoxVc Ver 1.3.3 >> New update files will be uploaded on 2017-10-.  
   **&& This version supports "Html page for checking and management malware's md5_hash, size, directory_path." &&**      
         **1. New function will be supported.**
-        
-            + Html page for checking and management malwares md5_hash, size, directory_path.
-            + This function is focusing on malware analysis.
-            + Page will be made html, you can check  malwares name, md5_hash, installed_malware_directory_path, link for connect to https://www.virustotal.com/
+             >>Html page for checking and management malwares md5_hash, size, directory_path.
+             >>This function is focusing on malware analysis.
+             >>Page will be made html, you can check  malwares name, md5_hash, installed_malware_directory_path, link for connect to https://www.virustotal.com/
             
             
             
