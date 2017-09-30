@@ -1,0 +1,13 @@
+# Author : Repubic of Korea, Seoul, JungSan HS  31227 Lee Joon Sung
+# Author_Helper : Republic of Korea, KyungGido, Kim Min Seok
+# youtube : anonymous0korea0@gmail.com ;;;; tayaka
+# Email : miho0_0@naver.com
+
+
+This Program is followed by GNU/GPL.
+this version is 1.1.1.
+Program is writed by python 2.7
+
+==============================================================
+update list
+- none.
