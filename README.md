@@ -26,27 +26,27 @@ We recommend **FoxVc version 1.2.8 or later.**
 ### 1. FoxVc Ver 1.2.8 >> [Successefully updated on 2017-09-16 AM.12:24]   
 && New Version[1.2.8] will be updated on ** [Succesefully updated on 2017-09-18 FM.5:12] &&**  
   1. Maleware Database "sort module" is updated.  
-    >> "File_Hash_List" Type is modificated.  
-      >> I removed newline characters for stabilize malware detection.  
+    > "File_Hash_List" Type is modificated.  
+      I removed newline characters for stabilize malware detection.  
    2. New Cure Module is created.  
-        >> You can choose remove or neglect malware, with malware's installed_Directory_path.  
-          >>
+    > You can choose remove or neglect malware, with malware's installed_Directory_path.  
+      
         
 ### 1-1. FoxVc Ver 1.2.81 >> New update files will be uploaded on 2017-10-.
   1. Malware detections for Windows drive!  
-    >> upport malware detection for windows system files!  
-      >> dministrator permission requesting function is updated!  
+    > upport malware detection for windows system files!  
+      dministrator permission requesting function is updated!  
   2. Logging_Level is updated! (Info, Warning, critical, error)
         
          
 ### 2. FoxVc Ver 1.2.9 >> [Successefully updated on 2017-09-24 PM.4:53] 
   **1. Support Various Operating System -> Linux, Unix environment.**    
-        >> Linux, Unix root permission requesting function is updated.[new function]  
-          >> Already tested on Ubuntu 16.04LTS  
-            >> Testing on OpenBSD, Solalis at imao.  
+        > Linux, Unix root permission requesting function is updated.[new function]  
+          Already tested on Ubuntu 16.04LTS  
+          Testing on OpenBSD, Solalis at imao.  
           
           **New Supporting OSs are :**  
-           >
+           
               + Ubuntu 16.04.1 LTS-i386,EM64T  
               + Ubuntu 16.04.1 Server-i386,EM64T  
               + Ubuntu 12-i386,EM64T  
