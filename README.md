@@ -94,9 +94,9 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 ### 5. FoxVc Ver 1.3.2 >> New update files will be uploaded on 2017-10-.  
 **&& This version supports "Admin management UI". &&**   
 1. Ui will be updated for administrator.  
-   >> Admin Permission must be needed.
-    >> New Function(Admin permission request is updated)
-      >> The Execute Windows Permission Request window will appear on the screen.
+   > Admin Permission must be needed.
+     New Function(Admin permission request is updated)
+     The Execute Windows Permission Request window will appear on the screen.
             
 ### 6. FoxVc Ver 1.3.3 >> New update files will be uploaded on 2017-10-.  
 **&& This version supports "Html page for checking and management malware's md5_hash, size, directory_path." &&**      
