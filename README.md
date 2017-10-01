@@ -26,7 +26,7 @@ We recommend **FoxVc version 1.2.8 or later.**
 ### 1. FoxVc Ver 1.2.8 >> [Successefully updated on 2017-09-16 AM.12:24]   
 && New Version[1.2.8] will be updated on ** [Succesefully updated on 2017-09-18 FM.5:12] &&**  
   1. Maleware Database "sort module" is updated.  
-    > "File_Hash_List" Type is modificated.  
+    >> "File_Hash_List" Type is modificated.  
       I removed newline characters for stabilize malware detection.  
    2. New Cure Module is created.  
     > You can choose remove or neglect malware, with malware's installed_Directory_path.  
@@ -46,7 +46,7 @@ We recommend **FoxVc version 1.2.8 or later.**
           Testing on OpenBSD, Solalis at imao.  
           
           **New Supporting OSs are :**  
-           
+           >
               + Ubuntu 16.04.1 LTS-i386,EM64T  
               + Ubuntu 16.04.1 Server-i386,EM64T  
               + Ubuntu 12-i386,EM64T  
