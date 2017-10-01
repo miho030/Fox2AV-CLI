@@ -25,7 +25,7 @@ We recommend **FoxVc version 1.2.8 or later.**
   
 ### 1. FoxVc Ver 1.2.8 >> [Successefully updated on 2017-09-16 AM.12:24]   
 && New Version[1.2.8] will be updated on ** [Succesefully updated on 2017-09-18 FM.5:12] &&**  
-  1. Maleware Database "sort module" is updated.  
+  **1. Maleware Database "sort module" is updated.**  
     >> "File_Hash_List" Type is modificated.  
       >>I removed newline characters for stabilize malware detection.  
   2. New Cure Module is created.  
