@@ -68,9 +68,8 @@ We recommend **FoxVc version 1.2.8 or later.**
 **This scripts are unstable. so i upload various beta scripts after 1.2.9, like 1.2.91, 1.2.92, 1.2.93 ~  
 So, You can see the newly modified source code in the "Test Code for Linux ver" folder before the stable FoxVc 1.2.9 version is uploaded.** 
 
-  ### [INFO] Malware Database is updated!  
-  **&& New malware DB will be updated on 2017-10-&&**  
-  1. Currently Variant malwares are updated!  
+  ### [INFO] Malware Database is updated!    
+  **1. Currently Variant malwares are updated!**  
   2. New Function will start supporting!  
      >> Cloud-Based ASD(Anlab Smart Defence) Analysis.  
      >> ASD cloud automatic malware analysis system.  
