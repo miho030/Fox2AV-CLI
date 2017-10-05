@@ -1,5 +1,7 @@
 # New Opensource Vaccine, FoxVc.  
 
+* * *
+
 ## Warning  
 **1.2.7버전 이하의 FoxVC은 가능하면 사용하지 마십시오.**  
 악성코드 탐지 안정성에 문제가 있습니다.   
@@ -7,8 +9,9 @@
 
 **Do not use FoxVC versions below 1.2.7 if possible.**     
 There is a problem with malware detection stability.   
-We recommend **FoxVc version 1.2.8 or later.**    
+We recommend **FoxVc version 1.2.8 or later.**  
 
+* * *
 
 ## HI, Im noob Opensource Program coder, Nicht.
 
