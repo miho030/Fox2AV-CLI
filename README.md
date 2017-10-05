@@ -17,8 +17,8 @@ We recommend **FoxVc version 1.2.8 or later.**
 
 + This Program is follwing GNU/General Public License 3, so **anyone can modificate this program on own system environment.**  
 + **This program was created with Python 2.7,**  
-**Reqirement Libs are [hashlib, os, sys, logging, datetime, time, Win32com(pywin32)].**    
-+ **This Vc only support Signature-based malware detection.**  
+Reqirement Libs are [hashlib, os, sys, logging, datetime, time, Win32com(pywin32)].    
++ This Vc only support Signature-based malware detection.  
 + **Im trying to implement heuristic analysis using Python 2.7, However, I expect that it will take a considerable amount of time to realize it because there is not a lot of research data, and there is no case left for data by implementing heuristic inspection using Python.**    
 + Malware DB -> main.mdb, main.hdb || These will be updated continuously as soon as possible.  
 **I made new Server at 2017-09-25, for Malware_analysis. New Server is consists of [Cuckoo SandBox, Maltrieve, Yara_Generator, guest OS(Win7 or Ie8XP)]**  
