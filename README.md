@@ -71,9 +71,9 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
   ### [INFO] Malware Database is updated!    
   **1. Currently Variant malwares are updated!**  
   2. New Function will start supporting!  
-     >> Cloud-Based ASD(Anlab Smart Defence) Analysis.  
-     >> ASD cloud automatic malware analysis system.  
-        >> This service structure is a new analytical technique developed by anlab to respond to new and variant malwares.    
+     - Cloud-Based ASD(Anlab Smart Defence) Analysis.  
+     - ASD cloud automatic malware analysis system.  
+     - This service structure is a new analytical technique developed by anlab to respond to new and variant malwares.    
                 
   
   
