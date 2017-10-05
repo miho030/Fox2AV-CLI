@@ -46,7 +46,7 @@ We recommend **FoxVc version 1.2.8 or later.**
         >> Already tested on Ubuntu 16.04LTS  
          >> Testing on OpenBSD, Solalis at imao.  
           
-          **New Supporting OSs are :**  
+          **New Supporting Operating Systems are :**  
            >
               + Ubuntu 16.04.1 LTS-i386,EM64T  
               + Ubuntu 16.04.1 Server-i386,EM64T  
