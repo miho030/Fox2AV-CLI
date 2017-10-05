@@ -20,10 +20,11 @@ We recommend **FoxVc version 1.2.8 or later.**
 + Malware DB -> main.mdb, main.hdb || These will be updated continuously as soon as possible.  
 **I made new Server at 2017-09-25, for Malware_analysis. New Server is consists of [Cuckoo SandBox, Maltrieve, Yara_Generator, guest OS(Win7 or Ie8XP)]**  
 
+* * *
 
 ## New Informations for Update:
   
-### 1. FoxVc Ver 1.2.8 >> [Successefully updated on 2017-09-16 AM.12:24]   
+## 1. FoxVc Ver 1.2.8 >> [Successefully updated on 2017-09-16 AM.12:24]   
 && New Version[1.2.8] will be updated on ** [Succesefully updated on 2017-09-18 FM.5:12] &&**  
 1. Maleware Database "sort module" is updated.  
 >- "File_Hash_List" Type is modificated.  
@@ -32,14 +33,14 @@ We recommend **FoxVc version 1.2.8 or later.**
 2. New Cure Module is created.  
 >- You can choose remove or neglect malware, with malware's installed_Directory_path.   
         
-### 1-1. FoxVc Ver 1.2.81 >> New update files will be uploaded on 2017-10-.
+## 1-1. FoxVc Ver 1.2.81 >> New update files will be uploaded on 2017-10-.
 1. Malware detections for Windows drive!  
 >- upport malware detection for windows system files!  
 >- dministrator permission requesting function is updated!  
 2. Logging_Level is updated! (Info, Warning, critical, error)
         
          
-### 2. FoxVc Ver 1.2.9 >> [Successefully updated on 2017-09-24 PM.4:53] 
+## 2. FoxVc Ver 1.2.9 >> [Successefully updated on 2017-09-24 PM.4:53] 
 **1. Support Various Operating System -> Linux, Unix environment.**    
 >- Linux, Unix root permission requesting function is updated.[new function]  
 > [INFO] Already tested on Ubuntu 16.04LTS  
@@ -66,25 +67,27 @@ We recommend **FoxVc version 1.2.8 or later.**
   
 # Warning          
 **This scripts are unstable. so i upload various beta scripts after 1.2.9, like 1.2.91, 1.2.92, 1.2.93 ~  
-So, You can see the newly modified source code in the "Test Code for Linux ver" folder before the stable FoxVc 1.2.9 version is uploaded.** 
+So, You can see the newly modified source code in the "Test Code for Linux ver" folder before the stable FoxVc 1.2.9 version is uploaded.**  
 
-### [INFO] Malware Database is updated!    
+* * *
+
+## [INFO] Malware Database is updated!    
 **1. Currently Variant malwares are updated!**  
 2. New Function will start supporting!  
 >- Cloud-Based ASD(Anlab Smart Defence) Analysis.  
 > ASD cloud automatic malware analysis system.  
 > This service structure is a new analytical technique developed by anlab to respond to new and variant malwares.    
                 
+* * *
   
-  
-### 3. FoxVc Ver 1.3.0 >> [Successefully updated on 2017-09-30 AM:2:23] 
+## 3. FoxVc Ver 1.3.0 >> [Successefully updated on 2017-09-30 AM:2:23] 
 **&&This version supperted not only python 2 users but also python 3 users! &&**  
 1. New functions are supported!  
 >- The source code has been updated to make Python users more than 2 versions available through grammatical modifications.  
 > The original version uses sys.version_info to scan the installed version of Python on your system and import and use optimized code for each version.  
 >- branch version uses Lib2to3 to build python2 versions of FoxVc and python3 versions of FoxVc separately.  
 
-### 4. FoxVc Ver 1.3.1 >> New update files will be uploaded on 2017-10-    
+## 4. FoxVc Ver 1.3.1 >> New update files will be uploaded on 2017-10-    
 **&& This version supports "Updated-UI" for easier checking and handling resulted-malwares. &&**  
 1. UI update -> focusing on checking resulted-malwares.  
 - It take forms like string list return-type.  
@@ -98,16 +101,15 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 > New Function(Admin permission request is updated)
 > The Execute Windows Permission Request window will appear on the screen.
             
-### 6. FoxVc Ver 1.3.3 >> New update files will be uploaded on 2017-10-.  
+## 6. FoxVc Ver 1.3.3 >> New update files will be uploaded on 2017-10-.  
 **&& This version supports "Html page for checking and management malware's md5_hash, size, directory_path." &&**      
 1. New function will be supported.  
 >- This function is focusing on malware analysis for System manager.  
 > Html page for checking and management malwares md5_hash, size, directory_path.  
 > Page will be made html, you can check  malwares name, md5_hash, installed_malware_directory_path, link for connect to https://www.virustotal.com/  
             
-            
-            
-            
+* * *
+
 ## All new notifications and informations.  
 + **관리방식 교체로 인해 기존 저장소를 삭제하고 동일이름의 새로운 저장소로 업그레이드 되었습니다.**  
 + 시험기간과 가족여행의 병행으로 현 시점(2017-09-29)부터 10월 11일까지 새로운 버전 업로드가 일시중단 됩니다.  다만 이미 배포된 파일의 관리와 사이트 유지보수는 지속적으로 시행될 예정입니다. 새로운 1.3.0 버전은 09-30에 업로드될 예정입니다. 당연히 1.3.0 버전은 원할히 실행되지 않을 않을 것입니다.  고로, lib2to3를 사용한 스크립트로 1.3.01 버전으로 새로개발된 스크립트가 2017-10-02일에 업로드될 예정입니다.
@@ -117,6 +119,8 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/  
  
 ## This Document made by Nicht, using "Markdown Language" 
+
+* * *
 
 ## Informations of Coder    
  
