@@ -46,7 +46,7 @@ We recommend **FoxVc version 1.2.8 or later.**
         >> Already tested on Ubuntu 16.04LTS  
          >> Testing on OpenBSD, Solalis at imao.  
           
-          **New Supporting Operating Systems are :**  
+          New Supporting Operating Systems are :   
            >
               + Ubuntu 16.04.1 LTS-i386,EM64T  
               + Ubuntu 16.04.1 Server-i386,EM64T  
@@ -59,7 +59,7 @@ We recommend **FoxVc version 1.2.8 or later.**
               + BackTrack 5 R3-amd64  
               + BackTrack 5 R3-x32  
               + Tails OS-i386,EM64T  
-              + Element OS-i386,EM64T**     
+              + Element OS-i386,EM64T     
 
 ### A TEST HAS ALREADY BEEN COMPLETED IN UBUNTU, CENTOS, OPENBSD, SOLALIS, KALI, BT.  
   **TESTING ON TAILS, ELEMENT, SUSE AT IMAO.**    
