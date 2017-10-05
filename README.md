@@ -2,6 +2,17 @@
 
 * * *
 
+## Warning  
+**1.2.7버전 이하의 FoxVC은 가능하면 사용하지 마십시오.**  
+악성코드 탐지 안정성에 문제가 있습니다.   
+되도록이면 **1.2.8버전 이상의 FoxVc**을 추천합니다.(1.2.6은 권장될 수 있습니다.)  
+
+**Do not use FoxVC versions below 1.2.7 if possible.**     
+There is a problem with malware detection stability.   
+We recommend **FoxVc version 1.2.8 or later.** 
+
+* * *
+
 ## HI, Im noob Opensource Program coder, Nicht.
 
 + This Program is follwing GNU/General Public License 3, so **anyone can modificate this program on own system environment.**  
@@ -11,17 +22,6 @@ Reqirement Libs are [hashlib, os, sys, logging, datetime, time, Win32com(pywin32
 + **Im trying to implement heuristic analysis using Python 2.7, However, I expect that it will take a considerable amount of time to realize it because there is not a lot of research data, and there is no case left for data by implementing heuristic inspection using Python.**    
 + Malware DB -> main.mdb, main.hdb || These will be updated continuously as soon as possible.  
 **I made new Server at 2017-09-25, for Malware_analysis. New Server is consists of [Cuckoo SandBox, Maltrieve, Yara_Generator, guest OS(Win7 or Ie8XP)]**  
-
-* * *
-
-## Warning  
-**1.2.7버전 이하의 FoxVC은 가능하면 사용하지 마십시오.**  
-악성코드 탐지 안정성에 문제가 있습니다.   
-되도록이면 **1.2.8버전 이상의 FoxVc**을 추천합니다.(1.2.6은 권장될 수 있습니다.)  
-
-**Do not use FoxVC versions below 1.2.7 if possible.**     
-There is a problem with malware detection stability.   
-We recommend **FoxVc version 1.2.8 or later.**  
 
 * * *
 
@@ -49,6 +49,7 @@ We recommend **FoxVc version 1.2.8 or later.**
 > [INFO] Already tested on Ubuntu 16.04LTS  
 >- Testing on OpenBSD, Solalis at imao.  
 ```    
+
       [!] New Supporting Operating Systems are :  
             >
               + Ubuntu 16.04.1 LTS-i386,EM64T  
@@ -63,10 +64,12 @@ We recommend **FoxVc version 1.2.8 or later.**
               + BackTrack 5 R3-x32  
               + Tails OS-i386,EM64T  
               + Element OS-i386,EM64T  
+              
+              
 ``` 
 
 ### A TEST HAS ALREADY BEEN COMPLETED IN UBUNTU, CENTOS, OPENBSD, SOLALIS, KALI, BT.  
-  **TESTING ON TAILS, ELEMENT, SUSE AT IMAO.**    
+**TESTING ON TAILS, ELEMENT, SUSE AT IMAO.**    
   
 # Warning          
 **This scripts are unstable. so i upload various beta scripts after 1.2.9, like 1.2.91, 1.2.92, 1.2.93 ~  
