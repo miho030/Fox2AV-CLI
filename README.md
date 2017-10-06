@@ -96,9 +96,9 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 ## 4. FoxVc Ver 1.3.1 >> New update files will be uploaded on 2017-10-    
 **&& This version supports "Updated-UI" for easier checking and handling resulted-malwares. &&**  
 1. UI update -> focusing on checking resulted-malwares.  
-- It take forms like string list return-type.  
+>- It take forms like string list return-type.  
 2. New function supported.  
-- New version of Cure module.    
+>- New version of Cure module.    
             
 ## 5. FoxVc Ver 1.3.2 >> New update files will be uploaded on 2017-10-.  
 **&& This version supports "Admin management UI". &&**   
