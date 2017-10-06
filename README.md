@@ -124,11 +124,11 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
      
 Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/  
  
-## [+] This Document made by Nicht, using "Markdown Language" 
+## This Document made by Nicht, using "Markdown Language" 
 
 * * *
 
-## [+] Information of Coder    
+## [+]  Information of Coder    
  
  - Email : miho0_0@naver.com  
  - youtube : anonymous0korea0@gmail.com  
