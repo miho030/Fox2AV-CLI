@@ -100,7 +100,7 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 2. New function supported.  
 - New version of Cure module.    
             
-### 5. FoxVc Ver 1.3.2 >> New update files will be uploaded on 2017-10-.  
+## 5. FoxVc Ver 1.3.2 >> New update files will be uploaded on 2017-10-.  
 **&& This version supports "Admin management UI". &&**   
 1. Ui will be updated for administrator.  
 >- Admin Permission must be needed.
