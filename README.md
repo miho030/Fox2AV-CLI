@@ -64,7 +64,7 @@ Reqirement Libs are [hashlib, os, sys, logging, datetime, time, Win32com(pywin32
               + BackTrack 5 R3-x32  
               + Tails OS-i386,EM64T  
               + Element OS-i386,EM64T  
-              
+              + OpenSolalis EM64T
               
 ``` 
 
