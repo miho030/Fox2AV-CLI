@@ -44,7 +44,7 @@ Reqirement Libs are [hashlib, os, sys, logging, datetime, time, Win32com(pywin32
         
          
 ## 2. FoxVc Ver 1.2.9 >> [Successefully updated on 2017-09-24 PM.4:53] 
-**1. Support Various Operating System -> Linux, Unix environment.**    
+**1. Support Various Operating Systems -> Linux, Unix environment.**    
 >- Linux, Unix root permission requesting function is updated.[new function]  
 > [INFO] Already tested on Ubuntu 16.04LTS  
 >- Testing on OpenBSD, Solalis at imao.  
@@ -78,7 +78,7 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 * * *
 
 ## [INFO] Malware Database is updated!    
-**1. Currently Variant malwares are updated!**  
+**1. Currently Variant malware's data are updated!**  
 2. New Function will start supporting!  
 >- Cloud-Based ASD(Anlab Smart Defence) Analysis.  
 > ASD cloud automatic malware analysis system.  
