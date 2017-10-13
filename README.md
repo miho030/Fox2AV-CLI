@@ -93,18 +93,18 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 ## 3. FoxVc Ver 1.3.0 >> [Successefully updated on 2017-09-30 AM:2:23] 
 **&&This version supperted not only python 2 users but also python 3 users! &&**  
 1. New functions are supported!  
-  1. The source code has been updated to make Python users more than 2 versions available through grammatical modifications.  
-  2. The original version uses sys.version_info to scan the installed version of Python on your system and import and use optimized code for each version.  
+>- The source code has been updated to make Python users more than 2 versions available through grammatical modifications.  
+> The original version uses sys.version_info to scan the installed version of Python on your system and import and use optimized code for each version.  
 2. branch version uses Lib2to3 to build python2 versions of FoxVc and python3 versions of FoxVc separately.  
 
 
 # 4. A new FoxVc is developed!!!  
 ## The N_FoxVc is built with a structure and methodology that is significantly different from existing FoxVcs!  
 1. N_FoxVc is will be uploaded on 2010-10-30  
-  1. New Functions are updated!  
-  2. supporting zip and rar, 7zip, tar, tar.gz, tar.bz, bz files.  
+>- New Functions are updated!  
+> supporting zip and rar, 7zip, tar, tar.gz, tar.bz, bz files.  
 2. Introduced a new type of vaccine engine!  
-  1. The structure of the FoxVc engine is based on the "Structure and Principle of Anti-Virus" written by professor Choi Won-hyuk, who is currently developing Kikom vaccine.  
+- The structure of the FoxVc engine is based on the "Structure and Principle of Anti-Virus" written by professor Choi Won-hyuk, who is currently developing Kikom vaccine.  
             
 * * *
 
