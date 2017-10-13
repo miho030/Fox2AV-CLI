@@ -41,6 +41,10 @@ Reqirement Libs are [hashlib, os, sys, logging, datetime, time, Win32com(pywin32
 >- upport malware detection for windows system files!  
 >- dministrator permission requesting function is updated!  
 2. Logging_Level is updated! (Info, Warning, critical, error)
+
+## 1-2. FoxVc Ver 1.2.82 >> It will be uploaded on 2010-10-23
+1. More Reliably Updated Administrator Rights Request Function
+
         
          
 ## 2. FoxVc Ver 1.2.9 >> [Successefully updated on 2017-09-24 PM.4:53] 
@@ -93,6 +97,9 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 > The original version uses sys.version_info to scan the installed version of Python on your system and import and use optimized code for each version.  
 >- branch version uses Lib2to3 to build python2 versions of FoxVc and python3 versions of FoxVc separately.  
 
+
+"""  
+
 ## 4. FoxVc Ver 1.3.1 >> New update files will be uploaded on 2017-10-    
 **&& This version supports "Updated-UI" for easier checking and handling resulted-malwares. &&**  
 1. UI update -> focusing on checking resulted-malwares.  
@@ -113,6 +120,9 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 >- This function is focusing on malware analysis for System manager.  
 > Html page for checking and management malwares md5_hash, size, directory_path.  
 > Page will be made html, you can check  malwares name, md5_hash, installed_malware_directory_path, link for connect to https://www.virustotal.com/  
+
+""" 
+
             
 * * *
 
