@@ -98,37 +98,20 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 >- branch version uses Lib2to3 to build python2 versions of FoxVc and python3 versions of FoxVc separately.  
 
 
-"""  
-
-## 4. FoxVc Ver 1.3.1 >> New update files will be uploaded on 2017-10-    
-**&& This version supports "Updated-UI" for easier checking and handling resulted-malwares. &&**  
-1. UI update -> focusing on checking resulted-malwares.  
->- It take forms like string list return-type.  
-2. New function supported.  
->- New version of Cure module.    
-            
-## 5. FoxVc Ver 1.3.2 >> New update files will be uploaded on 2017-10-.  
-**&& This version supports "Admin management UI". &&**   
-1. Ui will be updated for administrator.  
->- Admin Permission must be needed.
-> New Function(Admin permission request is updated)
-> The Execute Windows Permission Request window will appear on the screen.
-            
-## 6. FoxVc Ver 1.3.3 >> New update files will be uploaded on 2017-10-.  
-**&& This version supports "Html page for checking and management malware's md5_hash, size, directory_path." &&**      
-1. New function will be supported.  
->- This function is focusing on malware analysis for System manager.  
-> Html page for checking and management malwares md5_hash, size, directory_path.  
-> Page will be made html, you can check  malwares name, md5_hash, installed_malware_directory_path, link for connect to https://www.virustotal.com/  
-
-""" 
-
+# 4. A new FoxVc is developed!!!  
+## The N_FoxVc is built with a structure and methodology that is significantly different from existing FoxVcs!
+1. N_FoxVc is will be uploaded on 2010-10-30
+- New Functions are updated!
+>- 1. supporting zip and rar, 7zip, tar, tar.gz, tar.bz, bz files.
+2. Introduced a new type of vaccine engine
+- The structure of the FoxVc engine is based on the "Structure and Principle of Anti-Virus" written by professor Choi Won-hyuk, who is currently developing Kikom vaccine.
             
 * * *
 
 ## [ ! ] All new notifications and informations.  
 + **관리방식 교체로 인해 기존 저장소를 삭제하고 동일이름의 새로운 저장소로 업그레이드 되었습니다.**  
-+ 시험기간과 가족여행의 병행으로 현 시점(2017-09-29)부터 10월 11일까지 새로운 버전 업로드가 일시중단 됩니다.  다만 이미 배포된 파일의 관리와 사이트 유지보수는 지속적으로 시행될 예정입니다. 새로운 1.3.0 버전은 09-30에 업로드될 예정입니다. 당연히 1.3.0 버전은 원할히 실행되지 않을 않을 것입니다.  고로, lib2to3를 사용한 스크립트로 1.3.01 버전으로 새로개발된 스크립트가 2017-10-02일에 업로드될 예정입니다.
++ 시험기간과 가족여행의 병행으로 현 시점(2017-09-29)부터 10월 11일까지 새로운 버전 업로드가 일시중단 됩니다.  다만 이미 배포된 파일의 관리와 사이트 유지보수는 지속적으로 시행될 예정입니다. 새로운 1.3.0 버전은 09-30에 업로드될 예정입니다. 당연히 1.3.0 버전은 원할히 실행되지 않을 않을 것입니다.  고로, lib2to3를 사용한 스크립트로 1.3.01 버전으로 새로개발된 스크립트가 2017-10-02일에 업로드될 예정입니다.  
++ **새로운 버전인 N_FoxVC 이 개발중에 있습니다.**
 + 안정화된 윈도우버전은 pyinstaller를 통해 exe파일로 압축되며, 안정된 리눅스/유닉스버전은 sh파일로 압축될 예정입니다.  
 + planning to supporting new function, Virtual dynamic analysis(Heuristic). :D  
      
@@ -140,7 +123,10 @@ Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/
 
 ## [+]  Information of Coder    
  
- - Email : miho0_0@naver.com  
- - youtube : anonymous0korea0@gmail.com  
- - Lee Joon Sung; Republic of Korea, Seoul, Gangnam, Gaepodong.  
- 
+- Email : miho0_0@naver.com  
+- youtube : anonymous0korea0@gmail.com  
+- Lee Joon Sung; Republic of Korea, Seoul, Gangnam, Gaepodong.  
+
+### Help the development of noob open source developers with your qualifications!  
+Donate : 986b71b9-d74b-464d-82c7-6b20c1ea576b
+(Donalbe cryptocurrency Tpyes are BTC, XMR, ETH, XDN, BCN, FCN, XDN, INF8, AEON)  
