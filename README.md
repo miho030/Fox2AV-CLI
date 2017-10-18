@@ -128,5 +128,5 @@ Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/
 - Lee Joon Sung; Republic of Korea, Seoul, Gangnam, Gaepodong.  
 
 ### Help noob open source developer with your mercy! ~~( Angela Ziegler )~~  
-Donate : 986b71b9-d74b-464d-82c7-6b20c1ea576b
-(Donalbe cryptocurrency Tpyes are BTC, XMR, ETH, XDN, BCN, FCN, XDN, INF8, AEON)  
++ Donate : 986b71b9-d74b-464d-82c7-6b20c1ea576b
+> (Donalbe cryptocurrency Tpyes are BTC, XMR, ETH, XDN, BCN, FCN, XDN, INF8, AEON)  
