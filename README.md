@@ -16,18 +16,26 @@ We recommend **FoxVc version 1.2.8 or later.**
 ## HI, Im noob Opensource Program coder, Nicht.
 
 + This Program is follwing GNU/General Public License 3, so **anyone can modificate this program on own system environment.**  
-+ **This program was created with Python 2.7,**  
-Reqirement Libs are [hashlib, os, sys, logging, datetime, time, Win32com(pywin32)].    
++ **This program was created with Python 2.7** 
 + This Vc only support Signature-based malware detection.  
 + **Im trying to implement heuristic analysis using Python 2.7, However, I expect that it will take a considerable amount of time to realize it because there is not a lot of research data, and there is no case left for data by implementing heuristic inspection using Python.**    
 + Malware DB -> main.mdb, main.hdb || These will be updated continuously as soon as possible.  
-**I made new Server at 2017-09-25, for Malware_analysis. New Server is consists of [Cuckoo SandBox, Maltrieve, Yara_Generator, guest OS(Win7 or Ie8XP)]**  
+**I made new Server at 2017-09-25, for Malware_analysis. New Server is consists of [Cuckoo SandBox, Maltrieve, Yara_Generator, guest OS(IE8 Win7)]**  
+
+
 
 * * *
- 
-## This Document made by Nicht, using "Markdown Language" 
 
-* * *
+## [ ! ] All new notifications and informations.  
+
++ **관리방식 교체로 인해 기존 저장소를 삭제하고 동일이름의 새로운 저장소로 업그레이드 되었습니다.**    
++ **새로운 버전인 N_FoxVC 이 개발중에 있습니다.**
++ **N_FoxVc의 테스트 코드는 TestCode폴더에서 각 업데이트별로 확인할 수 있습니다.
++ 안정화된 N_FoxVc을 기점으로 윈도우 실행파일(exe), 리눅스/유닉스 실행파일(sh)로 압축되어 배포판이 업로드 됩니다.
+
+* * *  
+
+
 
 ## [+]  Information of Coder    
  
