@@ -157,7 +157,10 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 
 
 # 4. A new FoxVc is developed!!!  
-## The N_FoxVc is built with a structure and methodology that is significantly different from existing FoxVcs!  
+The N_FoxVc is built with a structure and methodology that is significantly different from existing FoxVcs!  
+
+* * *
+
 1. N_FoxVc is will be uploaded on 2010-10-30  
   >- New Functions are updated!  
   > supporting zip and rar, 7zip, tar, tar.gz, tar.bz, bz files.  
