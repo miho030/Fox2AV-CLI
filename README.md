@@ -26,7 +26,7 @@ We recommend **FoxVc version 1.2.8 or later.**
 
 * * *
 
-## [ ! ] All new notifications and informations.  
+## All new notifications and informations.  
 
 + **관리방식 교체로 인해 기존 저장소를 삭제하고 동일이름의 새로운 저장소로 업그레이드 되었습니다.**    
 + **새로운 버전인 N_FoxVC 이 개발중에 있습니다.**
@@ -38,7 +38,7 @@ We recommend **FoxVc version 1.2.8 or later.**
 
 
 
-## [+]  Information of Coder    
+## Information of Coder    
  
 - Email : miho0_0@naver.com  
 - youtube : anonymous0korea0@gmail.com  
