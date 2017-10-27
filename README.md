@@ -159,17 +159,14 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 # 4. A new FoxVc is developed!!!  
 The N_FoxVc is built with a structure and methodology that is significantly different from existing FoxVcs!  
 
-* * *
-
 1. N_FoxVc is will be uploaded on 2010-10-30  
   >- New Functions are updated!  
   > supporting zip and rar, 7zip, tar, tar.gz, tar.bz, bz files.  
 2. Introduced a new type of vaccine engine!  
-  - The structure of the FoxVc engine is based on the "Structure and Principle of Anti-Virus" written by professor Choi Won-hyuk, who is currently developing Kikom vaccine.
+  - The structure of the FoxVc engine is based on the "Structure and Principle of Anti-Virus" written by professor Choi Won-hyuk, who is currently developing Kikom vaccine.  
+
+* * *
  
-
-
-
 ## Information of Coder    
  
 - Email : miho0_0@naver.com  
