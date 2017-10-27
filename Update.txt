@@ -2,7 +2,8 @@
 
 # 새로 개발된 N_FoxVc에 적용된 기술과 기능에 대한 설명.  
 ## 새롭게 개발중인 N_FoxVc은 기존 FoxVc의 문제점을 패치하고 있습니다.  
-  * 기존에 존재했던 문제점은...  
+ 
+* 기존에 존재했던 문제점은...  
 
 악성코드 검사후 각 malware별 치료 모듈이 확고하지 않았음.  
 백신 엔진이 직접 악성코드를 탐지하는 형태라서 악성코드 분석시, 상당히 시간이 걸림  
@@ -22,7 +23,7 @@ malwareDB로부터 나오는 악성코드 패턴을 효율적으로 사용하지
 > I removed newline characters for stabilize malware detection.  
   
 2. New Cure Module is created.  
-  >- You can choose remove or neglect malware, with malware's installed_Directory_path.   
+ >- You can choose remove or neglect malware, with malware's installed_Directory_path.   
         
 ## 1-1. FoxVc Ver 1.2.81 >> New update files will be uploaded on 2017-10-.
 1. Malware detections for Windows drive!  
@@ -71,25 +72,25 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 ## [INFO] Malware Database is updated!    
 **1. Currently Variant malware's data are updated!**  
 2. New Function will start supporting!  
-  >- Cloud-Based ASD(Anlab Smart Defence) Analysis.  
-  > ASD cloud automatic malware analysis system.  
-  > This service structure is a new analytical technique developed by anlab to respond to new and variant malwares.    
+>- Cloud-Based ASD(Anlab Smart Defence) Analysis.  
+> ASD cloud automatic malware analysis system.  
+> This service structure is a new analytical technique developed by anlab to respond to new and variant malwares.    
                 
 * * *
   
 ## 3. FoxVc Ver 1.3.0 >> [Successefully updated on 2017-09-30 AM:2:23] 
 **&&This version supperted not only python 2 users but also python 3 users! &&**  
 1. New functions are supported!  
-  >- The source code has been updated to make Python users more than 2 versions available through grammatical modifications.  
-  > The original version uses sys.version_info to scan the installed version of Python on your system and import and use optimized code for each version.  
+>- The source code has been updated to make Python users more than 2 versions available through grammatical modifications.  
+> The original version uses sys.version_info to scan the installed version of Python on your system and import and use optimized code for each version.  
 2. branch version uses Lib2to3 to build python2 versions of FoxVc and python3 versions of FoxVc separately.  
 
 
 # 4. A new FoxVc is developed!!!  
 ## The N_FoxVc is built with a structure and methodology that is significantly different from existing FoxVcs!  
 1. N_FoxVc is will be uploaded on 2010-10-30  
-  >- New Functions are updated!  
-  > supporting zip and rar, 7zip, tar, tar.gz, tar.bz, bz files.  
+>- New Functions are updated!  
+> supporting zip and rar, 7zip, tar, tar.gz, tar.bz, bz files.  
 2. Introduced a new type of vaccine engine!  
-  - The structure of the FoxVc engine is based on the "Structure and Principle of Anti-Virus" written by professor Choi Won-hyuk, who is currently developing Kikom vaccine.
+- The structure of the FoxVc engine is based on the "Structure and Principle of Anti-Virus" written by professor Choi Won-hyuk, who is currently developing Kikom vaccine.
  
