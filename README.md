@@ -26,6 +26,18 @@ Reqirement Libs are [hashlib, os, sys, logging, datetime, time, Win32com(pywin32
 * * *
 
 ## New Informations for Update:
+
+# 새로 개발된 N_FoxVc에 적용된 기술과 기능에 대한 설명.
+## 새롭게 개발중인 N_FoxVc은 기존 FoxVc의 문제점을 패치하고 있습니다.
+>- 기존에 존재했던 문제점은...
+> 악성코드 검사후 각 malware별 치료 모듈이 확고하지 않았음.
+> 백신 엔진이 직접 악성코드를 탐지하는 형태라서 악성코드 분석시, 상당히 시간이 걸림
+> Anti-Virus 프로젝트 파일 미성숙
+> 각종 취약점에 대응하는 보안기술 미적용
+> 정규화되지 않은 소스코드들
+> malwareDB로부터 나오는 악성코드 패턴을 효율적으로 사용하지 못하는 소스코드
+
+## 이를 보완하여 상당히 확고화된 새로운 백신을 개발하였습니다.  아직도 개발중이긴하지만, 미완성인 Test-code가 2017년-10-28일 오후에 업로드 됩니다.
   
 ## 1. FoxVc Ver 1.2.8 >> [Successefully updated on 2017-09-16 AM.12:24]   
 && New Version[1.2.8] will be updated on ** [Succesefully updated on 2017-09-18 FM.5:12] &&**  
@@ -104,8 +116,10 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 >- New Functions are updated!  
 > supporting zip and rar, 7zip, tar, tar.gz, tar.bz, bz files.  
 2. Introduced a new type of vaccine engine!  
-- The structure of the FoxVc engine is based on the "Structure and Principle of Anti-Virus" written by professor Choi Won-hyuk, who is currently developing Kikom vaccine.  
-            
+- The structure of the FoxVc engine is based on the "Structure and Principle of Anti-Virus" written by professor Choi Won-hyuk, who is currently developing Kikom vaccine.
+
+# 4.  
+
 * * *
 
 ## [ ! ] All new notifications and informations.  
