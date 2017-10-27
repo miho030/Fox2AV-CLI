@@ -156,7 +156,7 @@ So, You can see the newly modified source code in the "Test Code for Linux ver" 
 2. branch version uses Lib2to3 to build python2 versions of FoxVc and python3 versions of FoxVc separately.  
 
 
-# 4. A new FoxVc is developed!!!  
+### 4. A new FoxVc is developed!!!  
 The N_FoxVc is built with a structure and methodology that is significantly different from existing FoxVcs!  
 
 1. N_FoxVc is will be uploaded on 2010-10-30  
