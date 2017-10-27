@@ -34,13 +34,15 @@ We recommend **FoxVc version 1.2.8 or later.**
 
 Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/   
 
+
 * * *  
+* * *
 
-# New Informations for updates!  
+## New Informations for updates!  
 
 
-# 새로 개발된 N_FoxVc에 적용된 기술과 기능에 대한 설명.  
-## 새롭게 개발중인 N_FoxVc은 기존 FoxVc의 문제점을 패치하고 있습니다.  
+### 새로이 개발중인 N_FoxVc에 적용된 기술과 기능에 대한 설명.  
+개발중인 N_FoxVc은 기존 FoxVc의 문제점을 패치하고 있습니다.  
 
 * 기존에 존재했던 문제점은...  
 ``` 
@@ -76,6 +78,9 @@ Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/
 
 [!] 이를 보완하여 상당히 확고화된 새로운 백신을 개발하였습니다.  
     아직도 개발중이긴하지만, 미완성인 Test-code가 2017년-10-28일 오후에 업로드 됩니다.  
+    
+    
+* * *
   
 
 ## 1. FoxVc Ver 1.2.8 >> [Successefully updated on 2017-09-16 AM.12:24]   
@@ -86,7 +91,9 @@ Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/
   
 2. New Cure Module is created.  
   >- You can choose remove or neglect malware, with malware's installed_Directory_path.   
-        
+
+* * *
+
 ## 1-1. FoxVc Ver 1.2.81 >> New update files will be uploaded on 2017-10-.
 1. Malware detections for Windows drive!  
 >- upport malware detection for windows system files!  
@@ -96,7 +103,8 @@ Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/
 ## 1-2. FoxVc Ver 1.2.82 >> It will be uploaded on 2010-10-23
 1. More Reliably Updated Administrator Rights Request Function
 
-                
+* * *
+
 ## 2. FoxVc Ver 1.2.9 >> [Successefully updated on 2017-09-24 PM.4:53] 
 **1. Support Various Operating Systems -> Linux, Unix environment.**    
 >- Linux, Unix root permission requesting function is updated.[new function]  
