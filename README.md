@@ -29,8 +29,8 @@ We recommend **FoxVc version 1.2.8 or later.**
 ## All new notifications and informations.  
 
 + **관리방식 교체로 인해 기존 저장소를 삭제하고 동일이름의 새로운 저장소로 업그레이드 되었습니다.**    
->- **새로운 버전인 N_FoxVC 이 개발중에 있습니다.**  
-> **N_FoxVc의 테스트 코드는 TestCode폴더에서 각 업데이트별로 확인할 수 있습니다**  
++ **새로운 버전인 N_FoxVC 이 개발중에 있습니다.**  
++ **N_FoxVc의 테스트 코드는 TestCode폴더에서 각 업데이트별로 확인할 수 있습니다**  
 
 Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/   
 
