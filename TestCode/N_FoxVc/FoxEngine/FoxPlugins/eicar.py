@@ -4,6 +4,7 @@
 
 import os
 import hashlib
+importa FxCryptolib
 
 class FoxMain:
     # 플러그인 엔진을 초기화함
@@ -21,9 +22,7 @@ class FoxMain:
 
             size = os.path.getsize(filename)
             if size == 68:
-                m = hashlib.md5()
-                m.update(mm[:68])
-                fmd5 = m.hexdigest()
+                fmd5 = FxCryptolib.md5([:68])
 
                 if fmd5 == '44d88612fea8a8f36de82e1278abb02f':
                     return True, 'Eicar-Test-File (Not a virus)', 0
@@ -52,7 +51,7 @@ class FoxMain:
 
 
         info['author'] = 'Nicht; Lee Joon Sung'
-        info['version'] = '1.0'
+        info['version'] = '1.2'
         info['title'] = 'Eicar Scan Engine'
         info['fxm_name'] = 'eicar'
 
