@@ -97,7 +97,7 @@ class EngineInstance:
         else:
             return False
 
-    def init(self):
+    def FreshPlugE(self):
         t_fvcmain_inst = []  # 최종 인스턴스가 아님....
         # 초기화 해서(init) 플러그인 엔진이 정상파일인지 확인함.
 
@@ -105,12 +105,12 @@ class EngineInstance:
             print '[*] ', 'FvcMain init() : '
         for inst in self.fvcmain_inst:
             try:
-                ret = inst.init(self.plugins_path)  # 플러그인 함수 호출!!
+                ret = inst.FreshPlugE(self.plugins_path)  # 플러그인 함수 호출!!
                 if not ret:
                     t_fvcmain_inst.append(inst)  # 최종 인스턴스로 확정 -> inst 리스트에 플러그인 경로 저장
 
                     if self.debug:
-                        print '[-] ', '%s.init() : %d' % (inst.__module__, ret)
+                        print '[-] ', '%s.FreshPlugE() : %d' % (inst.__module__, ret)
             except AttributeError:
                 continue
 
@@ -126,20 +126,20 @@ class EngineInstance:
 
 
     # 플러그인 엔진 전체를 종료시킨다.
-    def uinit(self):
+    def DownPlugE(self):
         if self.debug:
             print '[*] ', 'FvcMAain.unit() : '
 
         for inst in self.fvcmain_inst:
             try:
-                ret = inst.uninit()
+                ret = inst.DownPlugE()
                 if self.debug:
-                    print '[-] ', '%s.unint() : %d' % (inst.__module__, ret)
+                    print '[-] ', '%s.DownPlugE() : %d' % (inst.__module__, ret)
             except AttributeError:
                 continue
 
 
-    def getinfo(self):
+    def GetInfoPlugE(self):
         ginfo = []  # 플러그인 엔진 정보를 저장한다.
 
         if self.debug:
@@ -147,11 +147,11 @@ class EngineInstance:
 
         for inst in self.fvcmain_inst:
             try:
-                ret = inst.getinfo()
+                ret = inst.GetInfoPlugE()
                 ginfo.append(ret)
 
                 if self.debug:
-                    print '     [-]', '%s.getinfo() : ' % inst.__module__
+                    print '     [-]', '%s.GetInfoPlugE() : ' % inst.__module__
                     for key in ret.keys():
                         print '           - %-10s : %s' % (key, ret[key])
             except AttributeError:
@@ -160,7 +160,7 @@ class EngineInstance:
         return ginfo
 
 
-    def listvirus(self, *callback):
+    def VirusList(self, *callback):
         vlist = []  # 진단/치료 가능한 악성코드 목록을 저장할 리스트
 
         argc = len(callback)  # 가변인자 확인
@@ -173,11 +173,11 @@ class EngineInstance:
             return []
 
         if self.debug:
-            print '[*] ', 'FvcMain listvirus : '
+            print '[*] ', 'FvcMain.VirusList : '
 
         for inst in self.fvcmain_inst():
             try:
-                ret = inst.listvirus()
+                ret = inst.VirusList()
 
                 # 콜백 함수가 있다면 콜백함수 호출
                 if isinstance(cb_fn, type.FunctionType):
@@ -186,7 +186,7 @@ class EngineInstance:
                     vlist += ret
 
                 if self.debug:
-                    print '     [-] ', '%s.listvirus() : ' % inst.__module__
+                    print '     [-] ', '%s.VirusList() : ' % inst.__module__
                     for vname in ret:
                         print '.              -%s' % vname
 
@@ -196,9 +196,9 @@ class EngineInstance:
         return vlist
 
 # 플러그인 엔진에게 악성코드 검사를 요청!!!
-    def scan(self, filename):
+    def Scan(self, filename):
         if self.debug:
-            print '[*] ', 'FvcMain.scan(): '
+            print '[*] ', 'FvcMain.Scan(): '
 
         try:
             ret = False
@@ -211,12 +211,12 @@ class EngineInstance:
 
             for i, inst in enumerate(self.fvcmain_inst):
                 try:
-                    ret, vname, mid = inst.scan(mm, filename)
+                    ret, vname, mid = inst.Scan(mm, filename)
                     if ret:
                         eid = i
 
                         if self.debug:
-                            print '[-] ', '%s.scan() : ' % (inst.__module__.inst)
+                            print '[-] ', '%s.Scan() : ' % (inst.__module__.inst)
 
 
                         break
@@ -235,17 +235,17 @@ class EngineInstance:
             return False, '', -1, -1
 
 
-    def disinfect(self, filename, malware_id, engine_id):
+    def CureInfected(self, filename, malware_id, engine_id):
         ret = False
 
         if self.debug:
-            print '[*] ', 'FvcMain.disinfect() : '
+            print '[*] ', 'FvcMain.CureInfected() : '
         try:
             inst = self.fvcmain_inst[malware_id]
-            ret = inst.disinfect(filename, malware_id)
+            ret = inst.CureInfected(filename, malware_id)
 
             if self.debug:
-                print '     [-]', '%s disinfect() : %s' % (inst.__module__, ret)
+                print '     [-]', '%s.CureInfected() : %s' % (inst.__module__, ret)
         except AttributeError:
             pass
 
