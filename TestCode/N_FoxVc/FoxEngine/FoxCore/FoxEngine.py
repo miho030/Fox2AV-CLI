@@ -28,7 +28,7 @@ class Engine:
             return False
         
         # 검사 우선순위를 알아본다 -> (FoxVc.fxm파일 내에는 검사시 어떤 플러그인 엔진부터 검사를 시행하는지, 우선순위가 매겨져 있음.
-        ret = self.__getz_fxm_list(plugins_path + os.sep + 'FoxVc.fxm', pu)
+        ret = self.__get_fxm_list(plugins_path + os.sep + 'FoxVc.fxm', pu)
         if not ret:
             return False
         
