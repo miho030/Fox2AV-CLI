@@ -61,5 +61,21 @@ class Engine:
             
 
     def creat_instance(self):
-        ei = EngineInstance(self.plugin_path, self.max_datetime, self.debug)
+        ei = EngineInstance(self.plugins_path, self.max_datetime, self.debug)
+        if ei.creat(self.fxm_modules):
+            return ei
+        else:
+            return None
+        
+class EngineInstance
+    def __init__(self, plugins_path, max_datetime, debug=False)
+        self.debug = debug
+        self.plugins_path = plugins_path
+        self.max_datetime = max_datetime
+        
+        self.fvcmain_inst = []
+        
+    def create(self, fxm_modules)
+        
+        
         
