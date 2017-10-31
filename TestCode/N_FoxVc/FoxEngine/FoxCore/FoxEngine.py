@@ -97,3 +97,46 @@ class EngineInstance
             return True
         else:
             return False
+       
+    
+    def init(self):
+        t_fvcmain_inst = [] #최종 인스턴스가 아님....
+        # 초기화 해서(init) 플러그인 엔진이 정상파일인지 확인함.
+        
+        if self.debug:
+            print '[*] ', 'FvcMain init() : '
+        for inst in self.fvcmain_inst:
+            try:
+                ret = inst.init(self.plugins_path) # 플러그인 함수 호출!!
+                if not ret:
+                    t_fvcmain_inst.append(inst) # 최종 인스턴스로 확정 -> inst 리스트에 플러그인 경로 저장
+                    
+                    if self.debug:
+                        print '[-] ', '%s.init() : %d' % (inst.__module__, ret)
+             except: AttributeError:
+                    continue
+        self.fvcmain_inst = t_fvcmain_inst # 최종 fvcmain 인스턴스 등록
+        
+        if len(self.fvcmain_inst): # 인스턴스가 존재한다면 성공!
+            if self.debug:
+                print '[*] ', 'Count of FvcMain.init() : %d' % (len(self.fvcmain_inst))
+                
+            return True
+        else:
+            return False
+    # 플러그인 엔진 전체를 종료시킨다.
+    def uinit(self):
+        if self.debug:
+            print '[*] ', 'FvcMAain.unit() : '
+            
+        for inst in self.fvcmain_inst:
+            try:
+                ret = inst,uninit()
+                if self.debug:
+                    print '[-] ', '%s.unint() : %d' % (inst.__module__, ret)
+            except AttirbuteError:
+                contine
+                
+                
+                
+                    
