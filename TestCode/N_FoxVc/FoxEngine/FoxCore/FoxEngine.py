@@ -5,9 +5,11 @@
 import os, sys
 import StringIO
 import datetime
+import mmap
 
 from Tools.Encryption.Encrypt import FoxCrypt
 from Tools.Encryption.RSA import FvcRSA
+
 
 class Engine:
     def __init__(self, debug=False):
@@ -19,53 +21,49 @@ class Engine:
 
         self.max_datetime = datetime.datetime(1980, 1, 1, 0, 0, 0, 0)
 
-
     def set_plugins(self, plugins_path):
         self.plugins_path = plugins_path
         # 공개키 로딩...
         pu = FvcRSA.read_key(plugins_path + os.sep + 'FoxVcKey.pkr')
         if not pu:
             return False
-        
-        # 검사 우선순위를 알아본다 -> (FoxVc.fxm파일 내에는 검사시 어떤 플러그인 엔진부터 검사를 시행하는지, 우선순위가 매겨져 있음.
+
+        # 검사 우선순위를 알아본다 -> 
+        # (FoxVc.fxm파일 내에는 검사시 어떤 플러그인 엔진부터 검사를 시행하는지, 우선순위가 매겨져 있음.
         ret = self.__get_fxm_list(plugins_path + os.sep + 'FoxVc.fxm', pu)
         if not ret:
             return False
-        
 
         if self.debug:
             print '[*] ', 'FoxVc.fxm : '
             print '    ', self.fxmfiles
-        
+
         # FoxVc.lst에서 지정된 플러그인 순서대로 파일을 로딩한다.
         for fxm_name in self.fxmfiles:
             fxm_path = plugins_path + os.sep + fxm_name
-            F = FoxCrypt.FXM(fxmz-path, pu) # 모든 fxm파일 복호화
-            module = FoxCrypt.load(fxm_namez.split('.')[0], f.body)
-            if module: # 플러그인 메모리 로딩 성공?
+            F = FoxCrypt.FXM(fxm_path, pu)  # 모든 fxm파일 복호화
+            module = FoxCrypt.load(fxm_name.split('.')[0], F.body)
+            if module:  # 플러그인 메모리 로딩 성공?
                 self.fxm_modules.append(module)
                 # 메모리 로딩에 성공한 플러그인 엔진의 최신 빌드값 읽기
                 self.__get_last_build_time(F)
-                
-           
+
             if self.debug:
-
-
                 print '[*] ', 'fxm_modules : '
                 print '    ', self.fxm.modules
                 print '[*] ', 'Last updated %s UTC' % self.max_datetime.ctime()
-                
+
             return True
-        
-        
-    def __get_last_fxm_build_time(self, fxm_info)
-        d_y, d_m, d_d = fxm_info.date # 복호화된 플러그인 엔진의 가장 최근에 업데이트된 날짜 정보
-        t_h, t_m, t_s = fxm_info.time # 복호화된 플러그인 엔진의 가장 최근에 업데이트된 시간 정보
+
+    def __get_last_fxm_build_time(self, fxm_info):
+        d_y, d_m, d_d = fxm_info.date  # 복호화된 플러그인 엔진의 가장 최근에 업데이트된 날짜 정보
+        t_h, t_m, t_s = fxm_info.time  # 복호화된 플러그인 엔진의 가장 최근에 업데이트된 시간 정보
         t_datetime = datetime.datetime(d_y, d_m, d_d, t_h, t_m, t_s)
-        
+
         if self.max_datetime < t_datetime:
-            self.max_datetime t_date_time
-            
+            self.max_datetime
+            t_datetime
+
     # 백신 엔진의 인스턴스 생성.
     def create_instance(self):
         ei = EngineInstance(self.plugins_path, self.max_datetime, self.debug)
@@ -73,91 +71,182 @@ class Engine:
             return ei
         else:
             return None
-        
+
+
 class EngineInstance
     def __init__(self, plugins_path, max_datetime, debug=False)
-        self.debug = debug # 디버깅 여부
-        self.plugins_path = plugins_path # 플러그인 경로
-        self.max_datetime = max_datetime # 플러그인 엔진의 가장 최근값
-        
+        self.debug = debug  # 디버깅 여부
+        self.plugins_path = plugins_path  # 플러그인 경로
+        self.max_datetime = max_datetime  # 플러그인 엔진의 가장 최근값
+
         # 모든 플러그인에 대 fvcmain 인스턴스를 저장.
         self.fvcmain_inst = []
-        
-    def create(self, fxm_modules) # 백신 엔진의 인스턴스를 생성
+
+    def create(self, fxm_modules):  # 백신 엔진의 인스턴스를 생성
         for mod in fxm_modules:
             try:
-                t = mod.fvcmain() # 각 플러그인의 fvcmain 인스턴스 생성
-                self.fvcmainz_inst.append(t)
-            except AttributeError: # fvcmain()이 존재하지 않는다면?
+                t = mod.fvcmain()  # 각 플러그인의 fvcmain 인스턴스 생성
+                self.fvcmain_inst.append(t)
+            except AttributeError:  # fvcmain()이 존재하지 않는다면?
                 continue
-        
-        if len(self.fvcmain_inst): # 만약에 Fvcmain 인스턴스가 하나라도 존재한다면...
-            if self.debug()
+
+        if len(self.fvcmain_inst):  # 만약에 Fvcmain 인스턴스가 하나라도 존재한다면...
+            if self.debug():
                 print '[*] ', 'Count if FvcMain : %d' % (len(self.fvcmain_inst))
             return True
         else:
             return False
-       
-    
+
     def init(self):
-        t_fvcmain_inst = [] #최종 인스턴스가 아님....
+        t_fvcmain_inst = []  # 최종 인스턴스가 아님....
         # 초기화 해서(init) 플러그인 엔진이 정상파일인지 확인함.
-        
+
         if self.debug:
             print '[*] ', 'FvcMain init() : '
         for inst in self.fvcmain_inst:
             try:
-                ret = inst.init(self.plugins_path) # 플러그인 함수 호출!!
+                ret = inst.init(self.plugins_path)  # 플러그인 함수 호출!!
                 if not ret:
-                    t_fvcmain_inst.append(inst) # 최종 인스턴스로 확정 -> inst 리스트에 플러그인 경로 저장
-                    
+                    t_fvcmain_inst.append(inst)  # 최종 인스턴스로 확정 -> inst 리스트에 플러그인 경로 저장
+
                     if self.debug:
                         print '[-] ', '%s.init() : %d' % (inst.__module__, ret)
-             except: AttributeError:
-                    continue
-        self.fvcmain_inst = t_fvcmain_inst # 최종 fvcmain 인스턴스 등록
-        
-        if len(self.fvcmain_inst): # 인스턴스가 존재한다면 성공!
+            except AttributeError:
+                continue
+
+        self.fvcmain_inst = t_fvcmain_inst  # 최종 fvcmain 인스턴스 등록
+
+        if len(self.fvcmain_inst):  # 인스턴스가 존재한다면 성공!
             if self.debug:
                 print '[*] ', 'Count of FvcMain.init() : %d' % (len(self.fvcmain_inst))
-                
+
             return True
         else:
             return False
+
+
     # 플러그인 엔진 전체를 종료시킨다.
     def uinit(self):
         if self.debug:
             print '[*] ', 'FvcMAain.unit() : '
-            
+
         for inst in self.fvcmain_inst:
             try:
-                ret = inst,uninit()
+                ret = inst.uninit()
                 if self.debug:
                     print '[-] ', '%s.unint() : %d' % (inst.__module__, ret)
-            except AttirbuteError:
-                contine
-                
-                
+            except AttributeError:
+                continue
+
+
     def getinfo(self):
-        ginfo = [] # 플러그인 엔진 정보를 저장한다.
-        
+        ginfo = []  # 플러그인 엔진 정보를 저장한다.
+
         if self.debug:
             print '[*] ', 'FvcMain.getinfo() : '
-        
+
         for inst in self.fvcmain_inst:
             try:
                 ret = inst.getinfo()
                 ginfo.append(ret)
-                
-                if self.debug:
-                    print '     [-]'. '%s.getinfo() : ' % inst.__module__
-                    for key in ret keys():
-                        print '           - %-10s : %s' % (key, ret[key])
-                    except AttirbuteError:
-                        continue
-                        
-                return ginfo
 
-                
-                
-                    
+                if self.debug:
+                    print '     [-]', '%s.getinfo() : ' % inst.__module__
+                    for key in ret.keys():
+                        print '           - %-10s : %s' % (key, ret[key])
+            except AttributeError:
+                continue
+
+        return ginfo
+
+
+    def listvirus(self, *callback):
+        vlist = []  # 진단/치료 가능한 악성코드 목록을 저장할 리스트
+
+        argc = len(callback)  # 가변인자 확인
+
+        if argc == 0:  # 만약 인자가 없다면...
+            cb_fn = None
+        elif argc == 1:  # 인자가 있다면...
+            cb_fn = callback[0] #콜백함수가 존재하는지 확인!!
+        else:
+            return []
+
+        if self.debug:
+            print '[*] ', 'FvcMain listvirus : '
+
+        for inst in self.fvcmain_inst():
+            try:
+                ret = inst.listvirus()
+
+                # 콜백 함수가 있다면 콜백함수 호출
+                if isinstance(cb_fn, type.FunctionType):
+                    cb_fn(inst.__module__, ret)
+                else:  # 플러그인 엔진에 함수가 존재하지 않는다면,,, 악성코두 목록읓 누적하여 리턴함.
+                    vlist += ret
+
+                if self.debug:
+                    print '     [-] ', '%s.listvirus() : ' % inst.__module__
+                    for vname in ret:
+                        print '.              -%s' % vname
+
+            except AttributeError:
+                continue
+
+        return vlist
+
+# 플러그인 엔진에게 악성코드 검사를 요청!!!
+    def scan(self, filename):
+        if self.debug:
+            print '[*] ', 'FvcMain.scan(): '
+
+        try:
+            ret = False
+            vname = []
+            mid = -1
+            eid = -1
+
+            fp = open(filename, 'rb')
+            mm = mmap.mmap(fp.fileno(), 0, access=mmap.ACCESS_READ)
+
+            for i, inst in enumerate(self.fvcmain_inst)
+                try:
+                    ret, vname, mid = inst.scan(mm, filename)
+                    if ret:
+                        eid = i
+
+                        if self.debug:
+                            print '[-] ', '%s.scan() : ' % (inst.__module__.inst)
+                            
+                            
+                        break
+                except AttributeError:
+                    continue
+            
+            
+            if mm:
+                mm.close()
+            if fp:
+                fp.close()
+            return ret, vname, mid, eid
+        
+        except AttributeError:
+            pass
+            return False, '', -1, -1
+        
+        
+    def disinfect(self, filename, malware_id, engine_id):
+        ret = False
+        
+        if self.debug:
+            print '[*] ', 'FvcMain.disinfect() : '
+        try:
+            inst = self.fvcmain_inst[malware_id]
+            ret = inst.disinfect(filename, malware_id)
+            
+            if self.debug:
+                print '     [-]', '%s disinfect() : %s' % (inst.__module__, ret)
+        except AttributeError:
+            pass
+        
+        return ret
