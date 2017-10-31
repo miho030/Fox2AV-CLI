@@ -202,16 +202,17 @@ class fxmConstants:
     FXM_MD5_OFFSET = -32 # md5해시 위치
 
 
+# fxm 클래스
 class FXM:
     def __init__(self, fname, pu):
-        self.filename = fname
-        self.date = None
-        self.time = None
-        self.body = None
+        self.filename = fname # 파일 이름
+        self.date = None # 파일 날짜
+        self.time = None # 파일 시간
+        self.body = None # 복호화된 파일 내용
 
-        self.__fxm_data = None
-        self.__rsa_pu = pu
-        self.__rc4_key = None
+        self.__fxm_data = None # fxm파일의 내용
+        self.__rsa_pu = pu # rsa 공개키
+        self.__rc4_key = None # rc4키
 
         if self.filename:
             self.__decrypt(self.filename)
