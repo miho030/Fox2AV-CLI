@@ -166,6 +166,7 @@ def make(src_fname, debug=False):
         return False
 
 
+# 주어진 버퍼에 대해 반복해서 md5값의 결과를 리턴함.
 def ntimes_md5(buf, ntimes):
     md5 = hashlib.md5()
     md5hash = buf
@@ -175,7 +176,7 @@ def ntimes_md5(buf, ntimes):
 
     return md5hash
 
-
+# 오류문 제어를 위한 클래스
 class fxmFormatError(Exception):
     def __init__(self, value):
         self.value = value
@@ -183,22 +184,22 @@ class fxmFormatError(Exception):
     def __str__(self):
         return repr(self.value)
 
-
+# FXM파일 관련 상수
 class fxmConstants:
-    FXM_SIGNATURE = 'FOXVM'
+    FXM_SIGNATURE = 'FOXVM' # Signature
 
-    FXM_DATE_OFFSET = 4
-    FXM_DATE_LENGTH = 2
-    FXM_TIME_OFFSET = 6
-    FXM_TIME_LENGTH = 2
+    FXM_DATE_OFFSET = 4 # 날짜 위치
+    FXM_DATE_LENGTH = 2 # 날짜 크기
+    FXM_TIME_OFFSET = 6 # 시간 위치
+    FXM_TIME_LENGTH = 2 # 시간 크기
 
-    FXM_RESERVED_OFFSET = 8
-    FXM_RESERVED_LENGTH = 28
+    FXM_RESERVED_OFFSET = 8 # 예약영역 위치
+    FXM_RESERVED_LENGTH = 28 # 예약영역 크기
+    
+    FXM_RC4_KEY_OFFSET = 36 # RC4 키 위치
+    FXM_RC4_KEY_LENGTH = 32 # RC4 키 크기
 
-    FXM_RC4_KEY_OFFSET = 36
-    FXM_RC4_KEY_LENGTH = 32
-
-    FXM_MD5_OFFSET = -32
+    FXM_MD5_OFFSET = -32 # md5해시 위치
 
 
 class FXM:
