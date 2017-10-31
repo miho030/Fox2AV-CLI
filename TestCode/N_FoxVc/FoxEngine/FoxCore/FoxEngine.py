@@ -61,4 +61,5 @@ class Engine:
             
 
     def creat_instance(self):
-        ei = Engine
+        ei = EngineInstance(self.plugin_path, self.max_datetime, self.debug)
+        
