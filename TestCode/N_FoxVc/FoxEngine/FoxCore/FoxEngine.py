@@ -138,5 +138,26 @@ class EngineInstance
                 contine
                 
                 
+    def getinfo(self):
+        ginfo = [] # 플러그인 엔진 정보를 저장한다.
+        
+        if self.debug:
+            print '[*] ', 'FvcMain.getinfo() : '
+        
+        for inst in self.fvcmain_inst:
+            try:
+                ret = inst.getinfo()
+                ginfo.append(ret)
+                
+                if self.debug:
+                    print '     [-]'. '%s.getinfo() : ' % inst.__module__
+                    for key in ret keys():
+                        print '           - %-10s : %s' % (key, ret[key])
+                    except AttirbuteError:
+                        continue
+                        
+                return ginfo
+
+                
                 
                     
