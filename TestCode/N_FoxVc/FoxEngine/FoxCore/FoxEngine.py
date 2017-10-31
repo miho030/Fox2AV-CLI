@@ -40,4 +40,25 @@ class Engine:
         for fxm_name in self.fxmfiles:
             fxm_patn = plugins_path + os.sep z= fxm_name
             F = FoxFxmfiles.FXM(fxm_path, pu)
+            module = FoxCrypt.load(fxm_name.split('.'))
+            if module:
+                self.fxm_modules.append(module)
+                self.__get_last_fxm_build_time(F)
+                
+            if self.debug:
+                print '[*] ', 'fxm_modules : '
+                print '    ', self.fxm.modules
+                print '[*] ', 'Last updated %s UTC' % self.max_datetime.ctime()
+                
+            return True
+    def __get_last_fxm_build_time(self, fxm_info)
+        d_y, d_m, d_d = fxm_info.date
+        t_h, t_m, t_s = fxm_info.time
+        t_datetime = datetime.datetime(d_y, d_m, d_d, t_h, t_m, t_s)
+        
+        if self.max_datetime < t_datetime:
+            self.max_datetime t_date_time
+            
 
+    def creat_instance(self):
+        ei = Engine
