@@ -28,7 +28,7 @@ class Engine:
         if not pu:
             return False
 
-        # 검사 우선순위를 알아본다 -> 
+        # 검사 우선순위를 알아본다 ->
         # (FoxVc.fxm파일 내에는 검사시 어떤 플러그인 엔진부터 검사를 시행하는지, 우선순위가 매겨져 있음.
         ret = self.__get_fxm_list(plugins_path + os.sep + 'FoxVc.fxm', pu)
         if not ret:
@@ -73,7 +73,7 @@ class Engine:
             return None
 
 
-class EngineInstance
+class EngineInstance:
     def __init__(self, plugins_path, max_datetime, debug=False)
         self.debug = debug  # 디버깅 여부
         self.plugins_path = plugins_path  # 플러그인 경로
@@ -217,36 +217,36 @@ class EngineInstance
 
                         if self.debug:
                             print '[-] ', '%s.scan() : ' % (inst.__module__.inst)
-                            
-                            
+
+
                         break
                 except AttributeError:
                     continue
-            
-            
+
+
             if mm:
                 mm.close()
             if fp:
                 fp.close()
             return ret, vname, mid, eid
-        
+
         except AttributeError:
             pass
             return False, '', -1, -1
-        
-        
+
+
     def disinfect(self, filename, malware_id, engine_id):
         ret = False
-        
+
         if self.debug:
             print '[*] ', 'FvcMain.disinfect() : '
         try:
             inst = self.fvcmain_inst[malware_id]
             ret = inst.disinfect(filename, malware_id)
-            
+
             if self.debug:
                 print '     [-]', '%s disinfect() : %s' % (inst.__module__, ret)
         except AttributeError:
             pass
-        
+
         return ret
