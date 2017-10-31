@@ -74,7 +74,7 @@ class Engine:
 
 
 class EngineInstance:
-    def __init__(self, plugins_path, max_datetime, debug=False)
+    def __init__(self, plugins_path, max_datetime, debug=False):
         self.debug = debug  # 디버깅 여부
         self.plugins_path = plugins_path  # 플러그인 경로
         self.max_datetime = max_datetime  # 플러그인 엔진의 가장 최근값
@@ -209,7 +209,7 @@ class EngineInstance:
             fp = open(filename, 'rb')
             mm = mmap.mmap(fp.fileno(), 0, access=mmap.ACCESS_READ)
 
-            for i, inst in enumerate(self.fvcmain_inst)
+            for i, inst in enumerate(self.fvcmain_inst):
                 try:
                     ret, vname, mid = inst.scan(mm, filename)
                     if ret:
