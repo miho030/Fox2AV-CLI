@@ -83,7 +83,7 @@ class EngineInstance
         # 모든 플러그인에 대 fvcmain 인스턴스를 저장.
         self.fvcmain_inst = []
         
-    def create(self, fxm_modules) # 백신 엔진으ㅣ 인스턴스를 생성
+    def create(self, fxm_modules) # 백신 엔진의 인스턴스를 생성
         for mod in fxm_modules:
             try:
                 t = mod.fvcmain() # 각 플러그인의 fvcmain 인스턴스 생성
