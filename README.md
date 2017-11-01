@@ -65,7 +65,7 @@ Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/
         1. Header : 백신 이니셜 + 정보 표시[lastest updated files](날짜, 시간값)
         2. Body : individual Key를 이용해 암호화된 RC4키 + RC4로 암호화된 압축된 내부 소스코드
         3. Tailer : 개인키로 암호화한 Header와 Body전체에 대해 md5를 3번 연산한 결과.
-    -> 이와 같이 소스코드는 py -> pyc -> fxm의 파일변환을 거치며 암호화되어 해커가 백신코어나 파일을 임의로 변조하여 적용할 수 없도록..
+   -> 이와 같이 소스코드는 py -> pyc -> fxm의 파일변환을 거치며 암호화되어 해커가 백신코어나 파일을 임의로 변조하여 적용할 수 없도록..
         
 5. 정규화되지 않은 소스코드들  
    -> 소스코드 내 변수, 함수명, 파일명등을 사용하기 쉽도록 재명하고, 최대한 정규표현식을 사용하여 구축함.
