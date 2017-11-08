@@ -85,7 +85,7 @@ Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/
          [4]. 백신커널이 사용자에게 처리를 질의하고, 각 명령을 변수화하여 치료가능한 백신 플러그인엔진에게 치료 명령을 .
          [5]. 각 모듈(중요파일 => Fvc~.py, FoxVc.lst, MalwareDB...mal-pattern)들은 "문제점 4번"의 해결법과 같은 방식으로
               fxm(FoXcmadeKey)확장자로 모듈들이 보호되어 형태이므로, 백신커널은 복호화모듈을 임포트하여 각 모듈들을 사용하기 전에
-              (1) *.fxm    --> (2) *.pyc   --> (3) *.py 의 차례로 복호화되어 사용되는 보안체계를 .
+              (1) *.fxm    --> (2) *.pyc   --> (3) *.py 의 차례로 복호화되어 사용되는 보안체계를 채택함.
 
 ``` 
 
