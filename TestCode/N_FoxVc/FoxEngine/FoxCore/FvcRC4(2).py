@@ -24,7 +24,6 @@ class Rc4:
         self.__K_j = []
 
 
-
         # 암호를 설정하기 위한 함수
         # passwd = rc4암호화를 위한 암호문
         def set_key(self, passwd):
@@ -73,6 +72,18 @@ class Rc4:
             temp = self.__S[i]
             self.__S[i] = self.__S[j]
             self.__S[j] = temp
-
-
-
+            
+        # 암/복호화를 위한 준비...
+        def __gen_k(self):
+            i = self.__K_i
+            j = self.__K_j
+            
+            i = (i + 1) % 256
+            j = (j + self.__S[i]) % 256
+            self.__swap(i, j)
+            t = (self.__S[i] + self.__S[j]) % 256
+            
+            self.__K_i = i
+            self.__K_j = j
+            
+            return self.__S[t]
