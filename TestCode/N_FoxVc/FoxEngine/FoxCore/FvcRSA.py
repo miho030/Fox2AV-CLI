@@ -229,6 +229,22 @@ def creat_key(pu_fname='FoxVcKey.pkr', pr_fname='FoxVcKey.skr', debug=False): # 
     return True # 참 반환! -> 커널에 알리기 위함.
 
 
+
+
+# 주어진 키파일을 읽어 rsa로 변환시킨다.
+def read_key(key_filename):
+    try:
+        with open(key_filename, 'rt') as fp:
+            b = fp.read()
+            s = base64.b64encode(b)
+            key = marshal.load(s)
+
+        return key
+    except IOError:
+        return None
+
+
+
 # 암/복호화!!
 # buf = 암/복호화 대상 버퍼
 # key = rsa 키들
