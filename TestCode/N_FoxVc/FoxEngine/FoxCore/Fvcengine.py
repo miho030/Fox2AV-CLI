@@ -1,6 +1,6 @@
 # _*_coding:utf-8 _*_
 """
-made by Nicht = tayaka = Lee joon sung,
+made by Nicht = Tayaka = Lee joon sung,
 South Korea. Seoul. Gangnam. gaepodong.
 
 contact admin = miho0_0@naver.com OR anonymous0korea0@gmail.com(youtube) OR miho03092@gmail.com(gmail)
