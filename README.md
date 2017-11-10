@@ -90,8 +90,8 @@ Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/
 ``` 
 
 [!] 이를 보완하여 상당히 확고화된 새로운 백신을 개발하고 있습니다.  
-아직도 개발중이지만,  
-미완성인 Test-code가 2017년-10-30일 오후에 업로드 됩니다.  
+아직도 개발중이지만, 미완성인 Test-Code 2017-10-30일 오후에 업로드 됩니다.
+2017-11-15 압축파일, 윈도우기반의 악성코드 탐지 엔진이 업로드될 예정입니다.
     
 * * *
 ## N_FoxVc Testcodes are updated.
