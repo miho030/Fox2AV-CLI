@@ -1,7 +1,7 @@
 # _*_ coding:utf-8 _*_
 """
 made by Nicht = Tayaka = Lee joon sung,
-South Korea. Seoul. Gangnam. gaepodong.
+South Korea. Seoul. Gangnam. gaepodong. 
 
 contact admin = miho0_0@naver.com OR anonymous0korea0@gmail.com(youtube) OR miho03092@gmail.com(gmail)
 This is Opensource Computer Anti-Virus program.
