@@ -1,7 +1,22 @@
 # _*_ coding:utf-8 _*_
+"""
+made by Nicht = Lee joon sung,
+South Korea. Seoul. Gangnam. gaepodong.
+
+contact admin = miho0_0@naver.com OR anonymous0korea0@gmail.com(youtube) OR miho03092@gmail.com(gmail)
+This is Opensource Computer Anti-Virus program.
+anyone can modificate this script. n you can edit this program on own your system environment.
+
+This AV is compiled by Pycharm-community, made with Python 2.7.12, licensing on GNU Gnu Public License Ver.3.
+
+If you have time, stop by my YouTube channel!  ==> https://www.youtube.com/channel/UC7HDAfqRbKKLONZ9PmAiwtg?view_as=subscriber
+just fun! :D
+
+"""
+
 
 # 플러그인 엔진에 가장 최신 값을 적용하기 위한 모듈.
-# 이 모듈의 최신 시간값을 rc4와 rsa암호화 기법을 합쳐 만든 fxm확장자 파일내에 적용시킨다.
+# 이 모듈의 최신 시간값을 rc4와 rsa암호화 기법을 합쳐 만든 fxm확장자(FoXvcMadekey) 파일내에 적용시킨다.
 # -> 무결성 검증...
 
 import time
