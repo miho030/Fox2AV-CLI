@@ -44,7 +44,7 @@ class EngineKnownError(Exception):
 
 # definite Engine Class
 class Engine:
-    def __init__(self, verbose=False): # 플러그인 엔진 초기화 => 플러그인 엔진의 무결성, 위/변조 방지 위한 검사.
+    def __FreshPlugEnG__(self, verbose=False): # 플러그인 엔진 초기화 => 플러그인 엔진의 무결성, 위/변조 방지 위한 검사.
         self.verbose = verbose # 디버깅 여부 확인
 
         self.plugins_path = None # 플러그인 경로 설정
