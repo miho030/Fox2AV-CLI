@@ -21,22 +21,8 @@ We recommend **FoxVc version 1.2.8 or later.**
 + **Im trying to implement heuristic analysis using Python 2.7, However, I expect that it will take a considerable amount of time to realize it because there is not a lot of research data, and there is no case left for data by implementing heuristic inspection using Python.**    
 + Malware DB -> main.mdb, main.hdb || These will be updated continuously as soon as possible.  
 **I made new Server at 2017-09-25, for Malware-analysis. New Server is consists of [Cuckoo SandBox, Maltrieve, Yara_Generator, guest OS(IE8 Win7)]**  
-
-
-
-* * *
-
-## All new notifications and informations.  
-
-+ **관리방식 교체로 인해 기존 저장소를 삭제하고 동일이름의 새로운 저장소로 업그레이드 되었습니다.**    
-+ **새로운 버전인 N_FoxVC 이 개발중에 있습니다.**  
-+ **N_FoxVc의 테스트 코드는 TestCode폴더에서 각 업데이트별로 확인할 수 있습니다**  
-
-Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/   
-
-
+ 
 * * *  
-* * *
 
 ## New Informations for updates!  
 
@@ -104,11 +90,8 @@ Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/
     
 * * *
 ## N_FoxVc Testcodes are updated.
-    
-    
-* * *
-  
-
+   
+ 
 ## 1. FoxVc Ver 1.2.8 >> [Successefully updated on 2017-09-16 AM.12:24]   
 && New Version[1.2.8] will be updated on ** [Succesefully updated on 2017-09-18 FM.5:12] &&**  
 1. Maleware Database "sort module" is updated.  
@@ -156,8 +139,6 @@ Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/
               
 ``` 
 
-### A TEST HAS ALREADY BEEN COMPLETED IN UBUNTU, CENTOS, OPENBSD, SOLALIS, KALI, BT.  
-**TESTING ON TAILS, ELEMENT, SUSE AT IMAO.**    
   
 # Warning          
 **This scripts are unstable. so i upload various beta scripts after 1.2.9, like 1.2.91, 1.2.92, 1.2.93 ~  
@@ -192,7 +173,17 @@ The N_FoxVc is built with a structure and methodology that is significantly diff
   - The structure of the FoxVc engine is based on the "Structure and Principle of Anti-Virus" written by professor Choi Won-hyuk, who is currently developing Kicom vaccine.  
 
 * * *
- 
+
+## All new notifications and informations.  
+
++ **관리방식 교체로 인해 기존 저장소를 삭제하고 동일이름의 새로운 저장소로 업그레이드 되었습니다.**    
++ **새로운 버전인 N_FoxVC 이 개발중에 있습니다.**  
++ **N_FoxVc의 테스트 코드는 TestCode폴더에서 각 업데이트별로 확인할 수 있습니다**    
+Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/  
+
+* * *
+* * *
+
 ## Information of Coder    
  
 - Email : miho0_0@naver.com  
