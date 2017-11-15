@@ -33,12 +33,12 @@ class FoxMain:
     def FreshPlugEnG(self, plugins_path, vervose=False): 
         return 0
         
-        
-        
+
     # Halt the plugin engine.
     def DownPlugEnG(self):
         return 0
-         
+
+
     # 커널 정보 출력 위해 개발된 함수.
     def GeInfoPlugEnG(self):
         info = dict()
