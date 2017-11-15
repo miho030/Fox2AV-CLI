@@ -94,7 +94,7 @@ class Fox_File_Structure:
 
     # 악성코드 치료 후에 파일을 재압축 할 수 있는지에 대한 설정을 한다.
     def Foxes_are_setting_archive(self, mode):
-        self.__fs['can_arc']
+        self.__fs['can_arc'] = mode
 
 
     # 검사 대상 압축파일의 깊이를 알아낸다.
