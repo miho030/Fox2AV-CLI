@@ -26,7 +26,7 @@ class FoxMain():
         try:
             # 파일을 열어 악성코드 패턴만큼!만 파일에서 읽어낸다!
             fp = open(filename)
-            buf = fp.reaqd(len(self.dummy_pattern))
+            buf = fp.read(len(self.dummy_pattern))
             fp.close()
 
             # 악성코드 패턴을 비교한다.
@@ -37,7 +37,7 @@ class FoxMain():
             pass
 
         # 악성코드를 찾지 못했다면 찾지 못했음을 리턴함.
-        return False, '', -1, kernel.NOT_FOUND
+        return False, '', -1, FoxKernel.NOT_FOUND
 
     def CureInfected(self, filename, Malware_ID):
         try:
