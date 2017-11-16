@@ -1,4 +1,25 @@
 # _*_ coding:utf-8 _*_
+
+import os
+import imp
+import StringIO
+import datetime
+import types
+import mmap
+import glob
+import re
+import tempfile
+import shutil
+import struct
+import zipfile
+
+import FoxConst
+import FvcFile
+import FvcTimeLib
+
+from FoxEncryption.FoxRSA import FvcRSA as FvcRSA
+from FoxEncryption.FoxCryptionTools import FvcCrypto as FvcCrypto
+
 """
 made by Nicht = tayaka = Lee joon sung,
 South Korea. Seoul. Gangnam. gaepodong.
@@ -14,31 +35,16 @@ just fun! :D
 
 """
 
-import StringIO
-import datetime
-import glob
-import imp
-import os
-import re
-import struct
-import tempfile
-import types
-import FoxConst
-import FvcFile
-import FvcTimeLib
-
-from FoxEngine.FoxCore.FoxEncryption.FoxCryptionTools import FvcCrypto
-from FoxEngine.FoxCore.FoxEncryption.FoxRSA import FvcRSA
-
 
 # Definite Engine Error Mes.
-class EngineKnownError(Exception):
+class Fox2Av_Engine_Known_Error(Exception):
     def __init__(self, value):
         self.value = value
 
 
     def __str__(self):
         return repr(self.value)
+
 
 
 # definite Engine Class
@@ -55,8 +61,7 @@ class Engine:
         self.max_datetime = datetime.datetime(1980, 1, 1, 0, 0, 0, 0)
 
         # 백신이 구동되면서 만든 임시 파일을들 모두 제거한다.
-        self.__remove_Fvc_Temfile()
-
+        self.__remove_Fvc_TempFile()
 
 
 
@@ -75,9 +80,8 @@ class Engine:
 
 
 
-
     # 지정된 경로(plugins_path)내에서 플러그인 엔진을 로딩하기 위한 기초 설정을 마무리한다.
-    def set_plugins(self, plugins_path):
+    def set_Fox_plugins(self, plugins_path):
         # 플러그인 경로 지정.
         self.plugins_path = plugins_path
 
@@ -156,8 +160,8 @@ class Engine:
 
 
 
-    # 백신 엔진의 인스턴스를 생성한다.
-    def create_instance(self):
+    # 백신 엔진의 인스턴스를 생성한다.(여우 공동체 확립!)
+    def create__Fox_instance(self):
         ei = EngineInstance(self.plugins_path, self.max_datetime, self.verbose)
         if ei.create(self.fxm_modules):
             return ei
@@ -168,7 +172,7 @@ class Engine:
 
 
     # 복호화된 플러그인 엔진의 시간 값중 가장 최근 시간값을 보관한다.
-    # 이는 플러그인 엔진의 Lasteset-version-date 로 인식.
+    # 이는 플러그인 엔진의 Last-version-date 로 인식.
     def __get_last_fxm_build_time(self, fxm_info):
         if FoxConst.FVCDEBUG:
             t_datetime = datetime.datetime.utcnow()
@@ -219,7 +223,7 @@ class Engine:
 
 
 
-class EngineInstance:
+class Fox_Engine_Instance:
     def __init__(self, plugins_path, max_datetime, verbose=False):
         self.verbose = verbose # 디버깅 여부
         
@@ -363,6 +367,17 @@ class EngineInstance:
                 
         return vlist
 
+"""
+주석문 작성 취소 => 빠른 코딩 위해..
+의존성 있는 함수들의 작성 완료 -> 안정성 검증 후에 주석문 처리 예정!
+
+앙 여우띠!
+
+2017-11-18일 업로드 예정이었던 백신 커널 업로드 취소 -> PETA에 항시 기부하는 기부금의 금액을 잘못 선택하여.. 돈이 없음.(실수로 10만원이 아니라 40만원을 선택했으니깐-   ㅡ.ㅡ)
+그래도 어차피 추후에도 기부하는 금액인걸 이왕 보낸거면  여우,유기견복지에 쓰였으면 좋겠음..
+
+고로 2017-11-18 ~ 2017-11-21일까지 휴식 예정!!
+"""
 
 
     def scan(self, filename, *callback):
@@ -391,12 +406,335 @@ class EngineInstance:
         except IndexError:
             pass
 
-        file_info = FvcFile.FileStruct(filename)
+        file_info = FvcFile.Fox_File_Structure(filename)
         file_scan_list = [file_info]
+
+        # 한번만 하위 폴더 디렉토리를 검색함.
+        is_sub_dir_scan = True
+
+        while len(file_scan_list):
+            try:
+                t_file_info = file_scan_list.pop(0)
+                real_name = t_file_info.get_filename()
+
+                if os.path.isdir(real_name):
+                    if real_name[-1] == os.sep:
+                        real_name = real_name[:-1]
+
+                    ret_vlaue['result'] = False
+                    ret_vlaue['filename'] = real_name
+                    ret_vlaue['file_struct'] = t_file_info
+                    ret_vlaue['scan_state'] = FoxKernel.NOT_FOUND
+
+                    self.result['Folders'] += 1
+
+                    if self.options['opt_list']:
+                        self.call_scan_callback_fn(scan_callback_fn, ret_vlaue)
+
+                    if is_sub_dir_scan:
+                        flist = glob.glob(real_name + os.sep + '*')
+                        tmp_flist = []
+
+                        for rfname in flist:
+                            tmp_info = FvcFile.Fox_File_Structure(rfname)
+                            tmp_flist.append(tmp_info)
+
+                            file_scan_list = tmp_flist + file_scan_list
+
+                    if self.options['opt_nor']:
+                        is_sub_dir_scan = False
+                elif os.path.isfile(real_name) or t_file_info.is_archive():
+                    self.result['Files'] += 1
+
+                    if real_name == '':
+                        ret, ret_fi = self.unarc(t_file_info)
+                        if ret:
+                            t_file_info = ret_fi
+                        else:
+                            if ret_fi:
+                                ret_vlaue['result'] = ret
+                                ret_vlaue['engine_ID'] = -1
+                                ret_vlaue['Mal_name'] = ret_fi
+                                ret_vlaue['Malware_ID'] = -1
+                                ret_vlaue['scan_state'] = FoxKernel.ERROR
+                                ret_vlaue['file_struct'] = t_file_info
+
+                                if self.options['opt_list']:
+                                    self.call_scan_callback_fn(scan_callback_fn, ret_value)
+
+                                continue
+
+
+                    if self.options['opt_debug']:
+                        ret_vlaue['result'] = False
+                        ret_vlaue['engine_ID'] = -1
+                        ret_vlaue['Mal_name'] = 'debug'
+                        ret_vlaue['Malware_ID'] = -1
+                        ret_vlaue['scan_state'] = FoxKernel.ERROR
+                        ret_vlaue['file_struct'] = t_file_info
+
+                        self.call_scan_callback_fn(scan_callback_fn, ret_vlaue)
+
+                    ff = self.format(t_file_info)
+
+
+
+                    ret, vname, mid, scan_state, eid = self.__scan_file(t_file_info, ff)
+                    if self.options['opt_feature'] != 0xffffffff:
+                        self.__feature_file(t_file_info, ff, self.options['opt_feature'])
+
+
+                    if ret:
+                        if scan_state == FoxKernel.INFECTED:
+                            self.result['Infected_files'] += 1
+                        elif scan_stet == FoxKernel.SUSPECT:
+                            self.result['Suspect_files'] += 1
+                        elif scan_state == FoxKernel.WARNING:
+                            self.result['Warning'] += 1
+
+                        self.idenfied_virus_update[(vname)]
+
+
+                    ret_vlaue['result'] = ret
+                    ret_vlaue['engine_ID'] = eid
+                    ret_vlaue['Mal_name'] = vname
+                    ret_vlaue['Malware_ID'] = mid
+                    ret_vlaue['scan_state'] = scan_state
+                    ret_vlaue['file_struct'] = t_file_info
+
+                    if move_master_file:
+                        if t_master_file != t_file_info.get_master_filename()
+                            self.arcclose()
+                            self.__quarantine_file(t_master_file)
+                            move_master_file = False
+
+                    if ret_vlaue['result']:
+                        action_type = self.call_scan_callback_fn(scan_callback_fn, ret_vlaue)
+
+                        if self.options['opt_move']:
+                            if t_file_info.get_additional_filename() == '':
+                                self.arcclose()
+                                self.__quarantine_file(t_master_file)
+                                move_master_file = False
+                            else:
+                                move_master_file = True
+                                t_master_file = t_file_info.get_master_filename()
+                        else:
+                            if action_type == FoxConst.Fvc_ACTION_QUIT:
+                                return 0
+
+                            self.disinfect_process(ret_vlaue, action_type)
+
+                            if self.options['opt_dis'] or \
+                                (action_type == FoxConst.Fvc_ACTION_CURE or action_type == FoxConst.Fvc_ACTION_DELETE):
+
+                                if os.path.exixts(t_file_info.get_filename()):
+                                    t_file_info.set_modify(True)
+                                    file_scan_info = [t_file_info] + file_scan_list
+                                else:
+                                    self.__update_process(t_file_info)
+                    else:
+                        display_scan_result = True
+
+                        self.__update_process(t_file_info)
+
+                        try:
+                            arc_file_list = self.arclist(t_file_info, ff)
+                            if len(arc_file_list):
+                                file_scan_list = arc_file_list + file_scan_list
+
+                            if len(arc_file_list) == 1 and \
+                                self.disable_path.search(arc_file_list[0].get_additional_filename()):
+                                display_scan_result = False
+                        except zipfile.BadZipfile:
+                            pass
+
+                        if self.options['opt_list']:
+                            if display_scan_result:
+                                self.call_scan_callback_fn(scan_callback_fn, ret_value)
+
+            except KeyboardInterrupt:
+                return 1
+
+        self.__update_process(None, True)
+
+        if move_master_file:
+            self.__arcclose()
+            self.__quarantine_file(t_master_file)
+            move_master_file = False
+
+        return 0
+
+
+    def call_scan_callback_fn(self, a_scan_callback_fn, ret_value):
+        if isinstance(a_scan_callback_fn, types.FunctionType):
+            fs = ret_value['file_struct']
+            rep_path = self.disable_path.sub('', fs.get_additional_filename())
+            fs.set_additional_filename(rep_path)
+            ret_value['file_struct'] = fs
+
+            return a_scan_callback_fn(ret_value)
+
+
+    def __quarantine_file(self, filename):
+        try:
+            if self.options['infp_path']:
+                t_filename = os.path.split(filename)[-1]
+                fname = self.options['infp_path'] + os.sep + t_filename
+                t_quarantine_fname = fnamecount = 1
+                while True:
+                    if os.path.exists(t_quarantine_fname):
+                        t_quarantine_fname = '%s (%d' % (fname, count)
+                        count = 1
+                    else:
+                        break
+
+                shutil.move(filename, t_quarantine_fname)
+                if isinstance(self.quarantine_callback_fn, types.FunctionType):
+                    self.quarantine_callback_fn(filename, True)
+        except shutil.Error:
+            if isinstance(self.quarantine_callback_fn, types.FunctionType):
+                self.quarantine_callback_fn(filename, False)
+        except WindowsError:
+            if isinstance(self.quarantine_callback_fn, types.FunctionType):
+                self.quarantine_callback_fn(filename, False)
+
+    def __update_process(self, file_struct, immediately_flag=False):
+        if immediately_flag is False:
+            if len(self.update_info) == 0:
+                self.update_info.append(file_struct)
+            else:
+                n_file_info = file_struct
+                p_file_info = self.update_info[-1]
+
+                if p_file_info.get_master_filename() == n_file_info.get_master_filename() and \
+                        n_file_info.get_archive_engine_name() is not None:
+                    if p_file_info.get_level() <= n_file_info.get_level():
+                        self.update_info.append(n_file_info)
+                    else:
+                        ret_file_info = p_file_info
+                        while ret_file_info.get_level() != n_file_info.get_level():
+                            ret_file_info = self.__update_arc_file_struct(ret_file_info)
+                            self.update_info.append(ret_file_info)
+                        self.update_info.append(n_file_info)
+                else:
+                    if len(self.update_info) == 1:
+                        self.__arcclose()
+                        self.update_info = [file_struct]
+                    else:
+                        immediately_flag = True
+
+        if immediately_flag:
+            self.__arcclose()
+
+            if len(self.update_info) > 1:
+                ret_file_info = None
+
+                while len(self.update_info):
+                    p_file_info = self.update_info[-1]
+                    ret_file_info = self.__update_arc_file_struct(p_file_info)
+
+                    if len(self.update_info):
+                        self.update_info.append(ret_file_info)
+
+                if isinstance(self.update_callback_fn, types.FunctionType) and ret_file_info:
+                    self.update_info = [file_struct]
+
+
+        def __update_arc_file_struct(self, p_file_info):
+            import FoxKernel
+
+            t = []
+             
+            arc_level = p_file_info.get_level()
+            
+            while len(self.update_info):
+                if self.update_info[-1].get_level() == arc_level:
+                    t.append(self.update_info.pop())
+                else:
+                    break
+            
+            t.reverse()
+            
+            ret_file_info = self.update_info.pop()
+            
+            b_update = False
+            
+            for finfo in t:
+                if finfo.is_modify():
+                    b_update = True
+                    break
+                    
+            if b_update:
+                arc_name = t[0].get_archive_filename()
+                arc_engine_id = t[0].get_archive_engine_name()
+                can_arc = t[-1].get_can_archive()
+                
+                if can_arc == FoxKernel.MASTER_PACK:
+                    for inst in self.FoxMain_inst:
+                        try:
+                            ret = inst.mkarc(arc_engine_id, arc_name, t)
+                            if ret:
+                                break
+                        except AttributeError:
+                            continue
+                elif can_arc == FoxKernel.MASTER_DELELTE:
+                    os.reamove(arc_name)
+            
+                ret_file_info.set_modify(True)
+                
+            for tmp in t:
+                t_fname = tmp.get_filename()
+                
+                if os.path.exists(t_fname):
+                    try:
+                        os.remove(t_fname)
+                    except WindowsError:
+                        pass
+            return ret_file_info
         
-        
-        
-        
-        
-        -----> _*_ editing _*_
     
+    def __arcclose(self):
+        for i, inst in enumerate(self.FoxMain_inst):
+            try:
+                inst.arcclsoe()
+            except AttributeError:
+                pass
+            
+            
+    def __disinfect_process(self, ret_value, action_type):
+        if action_type == FoxConst.Fvc_ACTION_IGNORE:
+            return
+        
+        t_file_info = ret_value['file_struct']
+        mid = ret_value['Malware_ID']
+        eid = ret_value['engine_id']
+        
+        d_fname = t_file_info.get_filename()
+        d_ret = False
+        
+        if action_type == FoxConst.Fvc_ACTION_CURE:
+            d_ret = self.disinfect(d_fname, mid, eid)
+            if d_ret:
+                self.result['Disinfected_files'] += 1
+            elif action_type == FoxConst.Fvc_ACTION_DELETE:
+                try:
+                    os.remove(d_fname)
+                    d_ret = True
+                    self.result['Deleted_files'] +1 1
+                except IOError:
+                    d_ret = False
+                    
+            t_file_info.set_modify(d_ret)
+            
+            if isinstance(self.disinfect_callback_fn, types.FunctionTyep):
+                self.disinfect_callback_fn(ret_value, action_type)
+                
+                
+        """
+        
+        _*_ 작성중 _*_
+        _*_ Editing Imao!
+        
+        
+        """  
