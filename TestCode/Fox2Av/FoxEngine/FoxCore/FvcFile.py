@@ -37,7 +37,7 @@ class Fox_File_Structure:
 
 
     # 파일에 대해서 압축 가능한지 압축 여부를 질의한다.
-    def is_Fox_archive(self):
+    def is_Fox_can_archive(self):
         return self.__fs['is_arc']
 
 
@@ -52,13 +52,16 @@ class Fox_File_Structure:
 
 
     # 압축파일 대상의 파일명을 확인한다.
-    def is_Fox_can_find_filename_in_archive(self):
+    def is_Fox_get_filename_in_archive(self):
         return self.__fs['filename_in_arc']
-
 
 
     # 실제 작업 대상 파일의 이름을 확인한다.
     def is_Fox_get_filename(self, fname):
+        return self.__fs['real_filename']
+
+
+    def Foxes_are_setting_filename(self, fname):
         self.__fs['real_filename'] = fname
 
 
@@ -98,7 +101,7 @@ class Fox_File_Structure:
 
 
     # 검사 대상 압축파일의 깊이를 알아낸다.
-    def Foxes_are_getting_level(self):
+    def is_Foxes_are_getting_level(self):
         return self.__fs['level']
 
 
