@@ -853,13 +853,20 @@ class Fox_Engine_Instance:
         
     def unarc(self, file_struct):
         import FoxKernel
-        
         rname_struct = None
         
+        """
+        [!] 주석 안쓰기로 했는데... 이건 까먹을 것 같아서 써놓기로함.
+        """
+        
         try:
+            # 여우가 검사 대상파일이 압축파일인지 확인함
             if file_struct.is_Fox_can_archive():
+                # 여우가 압축파일 내부를 검사할 수 있는 플러그인 엔진을 가져올 수 있는지?
                 arc_engine_id = file_struct.is_any_Fox_get_archive_engine_name()
+                # 여우가 검사대상파일인 압축 파일의 실제 이름을 가져옴.
                 arc_name = file_struct.is_Fox_get_archive_filename()
+                # 여우가 재압축을 위해 압축파일 대상의 파일명을 확인함. -> 압축파일 내부의 악성코드는 삭제가 답이니깐..
                 name_in_arc = file_struct.is_Fox_can_find_filename_in_archive()
                 
                 for inst in self.FoxMain_inst:
