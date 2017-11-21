@@ -17,8 +17,8 @@ import FoxConst
 import FvcFile
 import FvcTimeLib
 
-from FoxEncryption.FoxRSA import FvcRSA as FvcRSA
-from FoxEncryption.FoxCryptionTools import FvcCrypto as FvcCrypto
+import FoxEncryption.FoxRSA.FvcRSA
+import FoxEncryption.FoxCryptionTools.FvcCrypto
 
 """
 made by Nicht = tayaka = Lee joon sung,
@@ -367,17 +367,17 @@ class Fox_Engine_Instance:
                 
         return vlist
 
-"""
-주석문 작성 취소 => 빠른 코딩 위해..
-의존성 있는 함수들의 작성 완료 -> 안정성 검증 후에 주석문 처리 예정!
 
-앙 여우띠!
+# 주석문 작성 취소 => 빠른 코딩 위해..
+# 의존성 있는 함수들의 작성 완료 -> 안정성 검증 후에 주석문 처리 예정!
 
-2017-11-18일 업로드 예정이었던 백신 커널 업로드 취소 -> PETA에 항시 기부하는 기부금의 금액을 잘못 선택하여.. 돈이 없음.(실수로 10만원이 아니라 40만원을 선택했으니깐-   ㅡ.ㅡ)
-그래도 어차피 추후에도 기부하는 금액인걸 이왕 보낸거면  여우,유기견복지에 쓰였으면 좋겠음..
+# 앙 여우띠!
 
-고로 2017-11-18 ~ 2017-11-21일까지 휴식 예정!!
-"""
+# 2017-11-18일 업로드 예정이었던 백신 커널 업로드 취소 -> PETA에 항시 기부하는 기부금의 금액을 잘못 선택하여.. 돈이 없음.
+# (실수로 10만원이 아니라 40만원을 선택했으니깐-   ㅡ.ㅡ)
+# 그래도 어차피 추후에도 기부하는 금액인걸 이왕 보낸거면  여우,유기견복지에 쓰였으면 좋겠음..
+#고로 2017-11-18 ~ 2017-11-21일까지 휴식 예정!!
+
 
 
     def scan(self, filename, *callback):
@@ -757,7 +757,7 @@ class Fox_Engine_Instance:
             fp = open(filename, 'rb')
             mm = mmap.mmap(fp.fileno(), 0, access=mmap.ACCESS_READ)
 
-            for i, inst in enumerate(self.Foxmain_inst):
+            for i, inst in enumerate(self.FoxMain_inst):
                 try:
                     ret, vnmae, mid, scan_state = inst.scan(mm, filename, fileformat, filename_ex)
                     if ret:
@@ -880,8 +880,8 @@ class Fox_Engine_Instance:
                                 can_arc  = FoxKernel.MASTER_IGNORE
 
                             rname_struct =file_struct
-                            rname_struct.set_filename(rname)
-                            rname_struct.set_can_archive(can_arc)
+                            rname_struct.is_Foxes_are_setting_filename(rname)
+                            rname_struct.Foxes_are_setting_archive(can_arc)
 
                             if self.options['opt_sigtool']:
                                 sig_fname = os.path.split(rname)[1]
@@ -906,11 +906,170 @@ class Fox_Engine_Instance:
                     fp = open(rname, 'wb')
                     fp.close()
 
-                    
-        """
-        
-        _*_ 작성중 _*_
-        _*_ Editing Imao!
-        
-        
-        """
+                    rname_struct = file_struct
+                    rname_struct.Foxes_are_setting_filename(rname)
+                    rname_struct.Foxes_are_setting_archive(FoxKernel.MASTER_IGNORE)
+                return True, rname_struct
+        except IOError:
+            pass
+        return False, None
+
+
+    def arclist(self, file_struct, fileformat):
+        import FoxKernel
+
+        file_scan_list = []
+
+        rname = file_struct.is_fox_get_filename()
+        deep_name = file_struct.Foxes_are_setting_additional_filename()
+        mname = file_struct.is_Fox_get_master_filename()
+        level = file_struct.is_Foxes_are_getting_level()
+
+        for inst in self.FoxMain_inst:
+            is_archive_engine = False
+            can_arc = FoxKernel.MASTER_IGNORE
+
+            try:
+                ret_GetInfoPlugEnG = inst.GetInfoPlugEnG()
+                if 'engine_type' in ret_GetInfoPlugEnG:
+                    if ret_GetInfoPlugEnG['engine_type'] ==FoxKernel.ARCHIVE_ENGINE:
+                        is_archive_engine = True
+
+                if 'make_arc_type' in ret_GetInfoPlugEnG:
+                    can_arc = ret_GetInfoPlugEnG['make_arc_type']
+            except AttributeError:
+                pass
+
+            try:
+                arc_list = []
+
+                if self.options['opt_arc']:
+                    arc_list = inst.arclist(rname, fileformat)
+
+                    if len(arc_list) and is_archive_engine:
+                        self.result['Packed'] += 1
+                    else:
+                        if not is_archive_engine:
+                            arc_list = inst.arclist(rname, fileformat)
+            except AttributeError:
+                pass
+
+            if len(arc_list):
+                for alist in arc_list:
+                    arc_id = alist[0]
+                    name = alist[1]
+
+                    if len(deep_name):
+                        dname = '%s/%s' % (deep_name, name)
+                    else:
+                        dname = '%s' % name
+
+                    fs = FvcFile.Fox_File_Structure()
+                    fs.Foxes_are_setting_archive_imao(arc_id, rname, name, dname, mname, False, can_arc, level+1)
+                    file_scan_list.append(fs)
+
+        return file_scan_list
+
+
+    def format(self, file_struct):
+        ret = {}
+        filename = file_struct.is_fox_get_filename()
+        filename_ex = file_struct.is_Fox_get_additional_filename()
+
+        fp = None
+        mm = None
+
+        try:
+            if os.path.getsize(filename) ==0:
+                raise Fox2Av_Engine_Known_Error('File has not size! It is not virus!')
+
+            fp = open(filename, 'rb')
+            mm = mmap.mmap(fp.fileno(), 0, access=mmap.ACCESS_READ)
+
+            for inst in self.FoxMain_inst:
+                try:
+                    ff = inst.format(mm, filename, filename_ex)
+                    if ff:
+                        ret.update(ff)
+                except AttributeError:
+                    pass
+        except IOError:
+            pass
+        except Fox2Av_Engine_Known_Error:
+            pass
+        except ValueError:
+            pass
+        except WindowsError:
+            pass
+
+        if mm:
+            mm.close()
+
+        if fp:
+            fp.close()
+
+        return ret
+
+
+
+    def get_version(self):
+        return self.max_datetime
+
+
+    def set_options(self, options=None):
+        if options:
+            self.options['opt_arc'] = options.opt_arc
+            self.options['opt_nor'] = options.opt_nor
+            self.options['opt_list'] = options.opt_list
+            self.options['opt_move'] = options.opt_move
+            self.options['opt_dis'] = options.opt_dis
+            self.options['infp_path'] = options.infp_path
+            self.options['opt_verbose'] = options.opt_verbose
+            self.options['opt_sigtool'] = options.opt_sigtool
+            self.options['opt_debug'] = options.opt_debug
+            self.options['opt_feature'] = options.opt_feature
+        else:
+            self.options['opt_arc'] = False
+            self.options['opt_nor'] = False
+            self.options['opt_list'] = False
+            self.options['opt_move'] = False
+            self.options['opt_dis'] = False
+            self.options['infp_path'] = None
+            self.options['opt_verbose'] = False
+            self.options['opt_sigtool'] = False
+            self.options['opt_debug'] = False
+            self.options['opt_feature'] = 0xffffffff
+        return True
+
+
+    def set_result(self):
+        self.result['Folders'] = 0
+        self.result['Files'] = 0
+        self.result['Packed'] = 0
+        self.result['Infected_files'] = 0
+        self.result['Suspect_files'] = 0
+        self.result['Warnings'] = 0
+        self.result['Identified_viruses'] = 0
+        self.result['Disinfected_files'] = 0
+        self.result['Deleted_files'] = 0
+        self.result['IO_errors'] = 0
+
+
+    def get_result(self):
+        self.result['Identified_viruses'] = len(self.identified_virus)
+        return self.result
+
+
+    def get_signum(self):
+        signum = 0
+
+        for inst in self.FoxMain_inst:
+            try:
+                ret = inst.GetInfoPlugEnG()
+
+                if 'sig_num' in ret:
+                    signum += ret['sig_num']
+            except AttributeError:
+                continue
+
+        return signum
