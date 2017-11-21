@@ -318,7 +318,7 @@ class Fox_Engine_Instance:
         if self.verbose: # 디버깅 여부                        앙 여우띠!!
             print '[*] FoxMain.GetInfoPlugEnG() :'
         
-        for inst in self.FoxMain_isnt:
+        for inst in self.FoxMain_inst:
             try:
                 ret = inst.GetInfoPlugEnG()
                 ginfo.append(ret)
@@ -370,12 +370,11 @@ class Fox_Engine_Instance:
 """
 주석문 작성 취소 => 빠른 코딩 위해..
 의존성 있는 함수들의 작성 완료 -> 안정성 검증 후에 주석문 처리 예정!
+
 앙 여우띠!
 
-
-2017-11-18일 업로드 예정이었던 백신 커널 업로드 취소 -> PETA에 항시 기부하는 기부금의 금액을 잘못 선택하여.. 돈이 없음.
-(실수로 10만원이 아니라 40만원을 선택했으니깐-   ㅡ.ㅡ)
-그래도 어차피 추후에도 기부하는 금액인 이왕 보낸거면  여우,유기견복지에 쓰였으면 좋겠음..
+2017-11-18일 업로드 예정이었던 백신 커널 업로드 취소 -> PETA에 항시 기부하는 기부금의 금액을 잘못 선택하여.. 돈이 없음.(실수로 10만원이 아니라 40만원을 선택했으니깐-   ㅡ.ㅡ)
+그래도 어차피 추후에도 기부하는 금액인걸 이왕 보낸거면  여우,유기견복지에 쓰였으면 좋겠음..
 
 고로 2017-11-18 ~ 2017-11-21일까지 휴식 예정!!
 """
@@ -396,7 +395,7 @@ class Fox_Engine_Instance:
             'result': '',
             'virus_name': '',
             'virus_id': -1,
-            'engine_id': -1
+            'engine_ID': -1
         }
 
         try:
@@ -488,12 +487,12 @@ class Fox_Engine_Instance:
                     if ret:
                         if scan_state == FoxKernel.INFECTED:
                             self.result['Infected_files'] += 1
-                        elif scan_stet == FoxKernel.SUSPECT:
+                        elif scan_state == FoxKernel.SUSPECT:
                             self.result['Suspect_files'] += 1
                         elif scan_state == FoxKernel.WARNING:
                             self.result['Warning'] += 1
 
-                        self.idenfied_virus_update[(vname)]
+                        self.idenfied_virus_update([vname])
 
 
                     ret_vlaue['result'] = ret
@@ -504,7 +503,7 @@ class Fox_Engine_Instance:
                     ret_vlaue['file_struct'] = t_file_info
 
                     if move_master_file:
-                        if t_master_file != t_file_info.get_master_filename()
+                        if t_master_file != t_file_info.get_master_filename():
                             self.arcclose()
                             self.__quarantine_file(t_master_file)
                             move_master_file = False
@@ -529,7 +528,7 @@ class Fox_Engine_Instance:
                             if self.options['opt_dis'] or \
                                 (action_type == FoxConst.Fvc_ACTION_CURE or action_type == FoxConst.Fvc_ACTION_DELETE):
 
-                                if os.path.exixts(t_file_info.get_filename()):
+                                if os.path.exists(t_file_info.get_filename()):
                                     t_file_info.set_modify(True)
                                     file_scan_info = [t_file_info] + file_scan_list
                                 else:
@@ -646,31 +645,31 @@ class Fox_Engine_Instance:
             import FoxKernel
 
             t = []
-             
+
             arc_level = p_file_info.get_level()
-            
+
             while len(self.update_info):
                 if self.update_info[-1].get_level() == arc_level:
                     t.append(self.update_info.pop())
                 else:
                     break
-            
+
             t.reverse()
-            
+
             ret_file_info = self.update_info.pop()
-            
+
             b_update = False
-            
+
             for finfo in t:
                 if finfo.is_modify():
                     b_update = True
                     break
-                    
+
             if b_update:
                 arc_name = t[0].get_archive_filename()
                 arc_engine_id = t[0].get_archive_engine_name()
                 can_arc = t[-1].get_can_archive()
-                
+
                 if can_arc == FoxKernel.MASTER_PACK:
                     for inst in self.FoxMain_inst:
                         try:
@@ -680,40 +679,40 @@ class Fox_Engine_Instance:
                         except AttributeError:
                             continue
                 elif can_arc == FoxKernel.MASTER_DELELTE:
-                    os.reamove(arc_name)
-            
+                    os.remove(arc_name)
+
                 ret_file_info.set_modify(True)
-                
+
             for tmp in t:
                 t_fname = tmp.get_filename()
-                
+
                 if os.path.exists(t_fname):
                     try:
                         os.remove(t_fname)
                     except WindowsError:
                         pass
             return ret_file_info
-        
-    
+
+
     def __arcclose(self):
         for i, inst in enumerate(self.FoxMain_inst):
             try:
                 inst.arcclsoe()
             except AttributeError:
                 pass
-            
-            
+
+
     def __disinfect_process(self, ret_value, action_type):
         if action_type == FoxConst.Fvc_ACTION_IGNORE:
             return
-        
+
         t_file_info = ret_value['file_struct']
         mid = ret_value['Malware_ID']
         eid = ret_value['engine_id']
-        
+
         d_fname = t_file_info.get_filename()
         d_ret = False
-        
+
         if action_type == FoxConst.Fvc_ACTION_CURE:
             d_ret = self.disinfect(d_fname, mid, eid)
             if d_ret:
@@ -722,20 +721,156 @@ class Fox_Engine_Instance:
                 try:
                     os.remove(d_fname)
                     d_ret = True
-                    self.result['Deleted_files'] +1 1
+                    self.result['Deleted_files'] += 1
                 except IOError:
                     d_ret = False
-                    
+
             t_file_info.set_modify(d_ret)
-            
-            if isinstance(self.disinfect_callback_fn, types.FunctionTyep):
+
+            if isinstance(self.disinfect_callback_fn, types.FunctionType):
                 self.disinfect_callback_fn(ret_value, action_type)
+
+
+
+    def __scan_file(self, file_struct, fileformat):
+        import FoxKernel
+        
+        if self.verbose:
+            print '[*] FoxMain.__scan_file() : '
+            
+        fp = None
+        mm = None
+        
+        try:
+            ret =False
+            vname = ''
+            mid = -1
+            scan_state = FoxKernel.NOT_FOUND
+            eid = -1
+            
+            filename = file_struct.get_filename()
+            filename_ex = file_struct.get__additional_filename()
+            
+            if os.path.getsize(filename) == 0:
+                raise Fox2Av_Engine_Known_Error('File has not size! It is not virus!')
+            
+            fp = open(filename, 'rb')
+            mm = mmap.mmap(fp.fileno(), 0, access=mmap.ACCESS_READ)
+            
+            for i, inst in enumerate(self.Foxmain_inst):
+                try:
+                    ret, vnmae, mid, scan_state = inst.scan(mm, filename, fileformat, filename_ex)
+                    if ret:
+                        eid = i
+                        if self.verbose:
+                            print '    [-] %s.__scan_file() : %s' % (inst.__Module__, vname)
+                            
+                        break
+                except AttributeError:
+                    continue
+                    
+            if mm:
+                mm.close()
                 
+            if fp:
+                fp.close()
                 
+            return ret, vname, mid, scan_state, eid
+        except Fox2Av_Engine_Known_Error:
+            pass
+        except ValueError:
+            pass
+        except KeyboardInterrupt:
+            pass
+        except:
+            self.result['IO_ERRORS'] += 1
+            
+        if mm:
+            mm.close()
+        
+        if fp:
+            fp.close()
+        
+        return False, '', -1, FoxKernel.NOT_FOUND, -1
+        
+        
+    def __featuere_file(self, file_struct, fileformat, Malware_ID):
+        if self.verbose:
+            print '[*] FoxMain.__feature_file() : '
+            
+        try:
+            ret = False
+            
+            filename = file_struct.get_filename()
+            filename_ex = file_struct.get_additional_filename()
+            
+            if os.path.getsize(filename) == 0:
+                raise Fox2Av_Engine_Known_Error('File has not size! It is not virus!')
+            
+            fp = open(filename, 'rb')
+            mm = mmap.mmap(fp.fileno(), 0, access=mmap.ACCESS_READ)
+            
+            for i, inst in enumerate(self.FoxMain_inst):
+                try:
+                    ret = inst.feature(mm, filename, fileformat, filename, Malware_ID)
+                    if ret:
+                        break
+                except AttributeError:
+                    continue
+                    
+            if mm:
+                mm.close()
+                
+            if fp:
+                fp.close()
+                
+                return ret
+        except IOError:
+            pass
+        except FloatingPointError:
+            pass
+        except WindowsError:
+            pass
+        
+        return False
+        
+    def Cure_Infected_files(self, filename, Malware_ID, engine_ID):
+        ret = False
+        
+        if self.verbose:
+            print '[*] FoxMain.Cure_Infected_files() : %s'
+        
+        try:
+            inst = self.FoxMain_inst[engine_ID]
+            ret = inst.Cure_Infected_files(filename, Malware_ID)
+            
+            if self.verbose:
+                print '    [-] %s.Cure_Infected_files() : %s' % (inst.__module__, ret)
+        except AttributeError:
+            pass
+        
+        return ret
+        
+    def unarc(self, file_struct):
+        import FoxKernel
+        
+        rname_struct = None
+        
+        try:
+            if file_struct.is_Fox_can_archive():
+                arc_engine_id = file_struct.is_any_Fox_get_archive_engine_name()
+                arc_name = file_struct.is_Fox_get_archive_filename()
+                name_in_arc = file_struct.is_Fox_can_find_filename_in_archive()
+                
+                for inst in self.FoxMain_inst:
+                    try:
+                    
+                    except
+# 함수 개발 중...
         """
         
         _*_ 작성중 _*_
         _*_ Editing Imao!
         
         
-        """  
+        """
