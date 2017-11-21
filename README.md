@@ -27,8 +27,8 @@ We recommend **FoxVc version 1.2.8 or later.**
 ## New Informations for updates!  
 
 
-### 새로이 개발중인 N_FoxVc에 적용된 기술과 기능에 대한 설명.  
-개발중인 N_FoxVc은 기존 FoxVc의 문제점을 패치하고 있습니다.  
+### 새로이 개발중인 Fox2Av 에 적용된 기술과 기능에 대한 설명.  
+개발중인 Fox2Av는 기존 FoxVc의 문제점을 패치하고 있습니다.  
 
 * 기존에 존재했던 문제점은...  
 ``` 
@@ -89,7 +89,7 @@ We recommend **FoxVc version 1.2.8 or later.**
 2017-11-15 압축파일, 윈도우기반의 악성코드 탐지 엔진이 업로드될 예정입니다.
     
 * * *
-## N_FoxVc Testcodes are updated.
+## N_FoxVc, Fox2Av's Testcode are updated.
    
  
 ## 1. FoxVc Ver 1.2.8 >> [Successefully updated on 2017-09-16 AM.12:24]   
