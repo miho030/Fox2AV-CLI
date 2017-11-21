@@ -162,7 +162,7 @@ class Engine:
 
     # 백신 엔진의 인스턴스를 생성한다.(여우 공동체 확립!)
     def create__Fox_instance(self):
-        ei = EngineInstance(self.plugins_path, self.max_datetime, self.verbose)
+        ei = Fox_Engine_Instance(self.plugins_path, self.max_datetime, self.verbose)
         if ei.create(self.fxm_modules):
             return ei
         else:
@@ -734,29 +734,29 @@ class Fox_Engine_Instance:
 
     def __scan_file(self, file_struct, fileformat):
         import FoxKernel
-        
+
         if self.verbose:
             print '[*] FoxMain.__scan_file() : '
-            
+
         fp = None
         mm = None
-        
+
         try:
             ret =False
             vname = ''
             mid = -1
             scan_state = FoxKernel.NOT_FOUND
             eid = -1
-            
+
             filename = file_struct.get_filename()
             filename_ex = file_struct.get__additional_filename()
-            
+
             if os.path.getsize(filename) == 0:
                 raise Fox2Av_Engine_Known_Error('File has not size! It is not virus!')
-            
+
             fp = open(filename, 'rb')
             mm = mmap.mmap(fp.fileno(), 0, access=mmap.ACCESS_READ)
-            
+
             for i, inst in enumerate(self.Foxmain_inst):
                 try:
                     ret, vnmae, mid, scan_state = inst.scan(mm, filename, fileformat, filename_ex)
@@ -764,17 +764,17 @@ class Fox_Engine_Instance:
                         eid = i
                         if self.verbose:
                             print '    [-] %s.__scan_file() : %s' % (inst.__Module__, vname)
-                            
+
                         break
                 except AttributeError:
                     continue
-                    
+
             if mm:
                 mm.close()
-                
+
             if fp:
                 fp.close()
-                
+
             return ret, vname, mid, scan_state, eid
         except Fox2Av_Engine_Known_Error:
             pass
@@ -784,32 +784,32 @@ class Fox_Engine_Instance:
             pass
         except:
             self.result['IO_ERRORS'] += 1
-            
+
         if mm:
             mm.close()
-        
+
         if fp:
             fp.close()
-        
+
         return False, '', -1, FoxKernel.NOT_FOUND, -1
-        
-        
+
+
     def __featuere_file(self, file_struct, fileformat, Malware_ID):
         if self.verbose:
             print '[*] FoxMain.__feature_file() : '
-            
+
         try:
             ret = False
-            
+
             filename = file_struct.get_filename()
             filename_ex = file_struct.get_additional_filename()
-            
+
             if os.path.getsize(filename) == 0:
                 raise Fox2Av_Engine_Known_Error('File has not size! It is not virus!')
-            
+
             fp = open(filename, 'rb')
             mm = mmap.mmap(fp.fileno(), 0, access=mmap.ACCESS_READ)
-            
+
             for i, inst in enumerate(self.FoxMain_inst):
                 try:
                     ret = inst.feature(mm, filename, fileformat, filename, Malware_ID)
@@ -817,13 +817,13 @@ class Fox_Engine_Instance:
                         break
                 except AttributeError:
                     continue
-                    
+
             if mm:
                 mm.close()
-                
+
             if fp:
                 fp.close()
-                
+
                 return ret
         except IOError:
             pass
@@ -831,49 +831,82 @@ class Fox_Engine_Instance:
             pass
         except WindowsError:
             pass
-        
+
         return False
-        
+
     def Cure_Infected_files(self, filename, Malware_ID, engine_ID):
         ret = False
-        
+
         if self.verbose:
             print '[*] FoxMain.Cure_Infected_files() : %s'
-        
+
         try:
             inst = self.FoxMain_inst[engine_ID]
             ret = inst.Cure_Infected_files(filename, Malware_ID)
-            
+
             if self.verbose:
                 print '    [-] %s.Cure_Infected_files() : %s' % (inst.__module__, ret)
         except AttributeError:
             pass
-        
+
         return ret
-        
+
     def unarc(self, file_struct):
         import FoxKernel
+
         rname_struct = None
-        
-        """
-        [!] 주석 안쓰기로 했는데... 이건 까먹을 것 같아서 써놓기로함.
-        """
-        
+
         try:
-            # 여우가 검사 대상파일이 압축파일인지 확인함
             if file_struct.is_Fox_can_archive():
-                # 여우가 압축파일 내부를 검사할 수 있는 플러그인 엔진을 가져올 수 있는지?
                 arc_engine_id = file_struct.is_any_Fox_get_archive_engine_name()
-                # 여우가 검사대상파일인 압축 파일의 실제 이름을 가져옴.
                 arc_name = file_struct.is_Fox_get_archive_filename()
-                # 여우가 재압축을 위해 압축파일 대상의 파일명을 확인함. -> 압축파일 내부의 악성코드는 삭제가 답이니깐..
                 name_in_arc = file_struct.is_Fox_can_find_filename_in_archive()
-                
+
                 for inst in self.FoxMain_inst:
                     try:
+                        unpack_data = inst.unarc(arc_engine_id, arc_name, name_in_arc)
+
+                        if unpack_data:
+                            rname = tempfile.mktemp(prefix='ftmp')
+                            fp = open(rname, 'wb')
+                            fp.write(unpack_data)
+                            fp.close()
+
+                            try:
+                                can_arc = inst.GetInfoPlugEnG()['make_arc_type']
+                            except KeyError:
+                                can_arc = FoxKernel.MASTER_IGNORE
+                            except AttributeError:
+                                can_arc  = FoxKernel.MASTER_IGNORE
+
+                            rname_struct =file_struct
+                            rname_struct.set_filename(rname)
+                            rname_struct.set_can_archive(can_arc)
+
+                            if self.options['opt_sigtool']:
+                                sig_fname = os.path.split(rname)[1]
+                                shutil.copy(rname, sig_fname)
+
+                                msg = '%s : %s\n' % (sig_fname, rname_struct.is_Fox_get_additional_filename())
+                                fp = open('sigtool.log', 'at')
+                                fp.write(msg)
+                                fp.close()
+
+                            break
+                    except AttributeError:
+                        continue
+                    except struct.error:
+                        continue
+                    except RuntimeError:
+                        return False, 'password protected'
+                    except MemoryError:
+                        return False, None
+                else:
+                    rname = tempfile.mktemp(prefix='ftmp')
+                    fp = open(rname, 'wb')
+                    fp.close()
+
                     
-                    except
-# 함수 개발 중...
         """
         
         _*_ 작성중 _*_
