@@ -1,7 +1,6 @@
 # New Opensource Vaccine, FoxVc.  
 
 * * *
-# 앙 기모띠 
 ## Warning  
 **1.2.7버전 이하의 FoxVC은 가능하면 사용하지 마십시오.**  
 악성코드 탐지 안정성에 문제가 있습니다.   
