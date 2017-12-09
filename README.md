@@ -26,6 +26,10 @@ We recommend **FoxVc version 1.2.8 or later.**
 ## New Informations for updates!  
 
 
+### Fox2AV -> TestCode 개발 단계! 소스 안정성 테스팅 후 완성본 코드 업로드 예정.
+### 배포판 개발중...
+
+
 ### 새로이 개발중인 Fox2Av 에 적용된 기술과 기능에 대한 설명.  
 개발중인 Fox2Av는 기존 FoxVc의 문제점을 패치하고 있습니다.  
 
