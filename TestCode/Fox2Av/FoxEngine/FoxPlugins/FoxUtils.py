@@ -1,4 +1,23 @@
-# _*_ coding:utf-8 _*_
+# _*_ coding:utf-8: _*_
+"""
+made by Nicht = Lee joon sung,
+South Korea. Seoul. Gangnam. gaepodong.
+
+contact admin = miho0_0@naver.com OR anonymous0korea0@gmail.com(youtube) OR miho03092@gmail.com(gmail)
+This is Opensource Computer Anti-Virus program.
+anyone can modificate this script. n you can edit this program on own your system environment.
+
+This AV is compiled by Pycharm-community, made with Python 2.7.12, licensing on GNU Gnu Public License Ver.3.
+
+If you have time, stop by my YouTube channel!  ==> https://www.youtube.com/channel/UC7HDAfqRbKKLONZ9PmAiwtg?view_as=subscriber
+just fun! :D
+
+"""
+
+
+# 편이상 주석문 미작성
+# 주석문 작성은 향후에 진행할 예정..
+
 
 import os
 import re
@@ -7,6 +26,7 @@ import glob
 import marshal
 import time
 import math
+
 
 def vprint(header, section=None, msg=None):
     if header:
@@ -106,4 +126,229 @@ class PatternMD%:
         except IOError:
             return None
 
-    # 작성중...
+
+    def __load_sig_ex(self, sig_dict, sig_prefix, sig_key, idx):
+        if not (sig_key in sig_dict) or not (idx in sig_dict[sig_key]):
+            try:
+                name_fname = self.plugins + os.sep + '%s.%s%s' % (sig_key, sig_prefix, idx)
+                sp = self.__load_sig(name_fname)
+                if sp is None:
+                    return False
+            except IOError:
+                return False
+
+            sig_dict[sig_key] = {idx: sp}
+
+            if not (sig_key in self.sig_times):
+                self.sig_times[sig_key] = {}
+
+            if not (sig_prefix in self.sig_times[sig_key]):
+                self.sig_times[sig_key][sig_prefix] = {}
+
+            self.sig_times[sig_key][sig_prefix][idx] = time.time()
+
+            return True
+
+    def __save_memory(self):
+        n = time.time()
+        for sig_key in self.sig_times.keys():
+            for sig_prefix in self.sig_times[sig_key].keys():
+                for idx in self.sig_times[sig_key][sig_prefix].keys():
+                    if n - self.sig_times[sig_key][sig_prefix][idx] > 4:
+                        if sig_prefix == 'i': # 1차 악성코드 패턴
+                            self.sig_p1s[sig_key].pop(idx)
+                        elif sig_prefix == 'c': # 2차 악성코드 패턴
+                            self.sig_p2s[sig_key].pop(idx)
+                        elif sig_prefix == 'n': # 악성코드 이름만을 정리한 패턴
+                            self.sig_names[sig_key][sig_prefix].pop(idx)
+
+                        self.sig_times[sig_key][sig_prefix].pop(idx)
+
+
+    def get_sig_num(self, sig_key):
+        sig_num = 0
+        fl = glob.glob(self.plugins +os.sep + '%sn??' % sig_key)
+
+        for fname in fl:
+            try:
+                buf = open(fname, 'rb').read(12)
+                if buf[0:4] =='FVCM':
+                    sig_num += get_uint32(buf, 4)
+            except IOError:
+                return None
+
+        return sig_num
+
+
+    def get_sig_vlist(self, sig_key):
+        sig_vname = []
+        fl = glob.glob(self.plugins + os.sep + '%sn??' % sig_key)
+
+        for fname in fl:
+            try:
+                sig_vname += self.__load_sig(fname)
+            except IOError:
+                return None
+
+        return sig_vname
+
+
+
+
+
+# 외부 라이브러리 소스코드 참고.
+# https://gist.github.com/atdt/875e0dba6a15e3fa6018
+
+
+FAIL = -1
+
+class AhoCorasick:
+    def __init__(self):
+        self.transitions = {}
+        self.outputs = {}
+        self.fails = {}
+
+    def make_tree(self, keywords):
+        new_state = 0
+
+        for keyword in keywords:
+            state = 0
+
+            for j, char in enumerate(keyword):
+                res = self.transitions.get((state, char), FAIL)
+                if res == FAIL:
+                    break
+                state = res
+
+            for char in keyword[j:]:
+                new_state += 1
+                self.transitions[(state, char)] = new_state
+                state = new_state
+
+            self.outputs[state] = [keyword]
+
+        queue = []
+
+        for (from_state, char), to_state in self.transitions.items():
+            if from_state == 0 and to_state != 0:
+                queue.append(to_state)
+                self.fails[to_state] = 0
+
+        while queue:
+            r = queue.pop(0)
+            for (from_state, char), to_state in self.transitions.items():
+                if from_state == r:
+                    queue.append(to_state)
+                    state = self.fails[from_state]
+
+                    while True:
+                        res = self.transitions.get((state, char), state and FAIL)
+                        if res != FAIL:
+                            break
+                        state = self.fails[state]
+
+                    failure = self.transitions.get((state, char), state and FAIL)
+                    self.fails[to_state] = failure
+                    self.outputs.setdefault(to_state, []).extend(
+                        self.outputs.get(failure, []))
+
+
+    def search(self, string):
+        state = 0
+        results = []
+        for i, char in enumerate(string):
+            while True:
+                res = self.transitions.get((state, char), state and FAIL)
+                if res != FAIL:
+                    state = res
+                    break
+                state = self.fails[state]
+
+            for match in self.outputs.get(state, ()):
+                pos = i - len(match) + 1
+                results.append((pos, match))
+
+        return results
+
+class HexDump:
+    def File(self, fname, start, size=0x200, width=16):
+        fp = open(fname, 'rb')
+        fp.seek(start)
+        row = start % width
+        col = (start / width) * width
+        r_size = 0
+        line_start = row
+
+        while True:
+            if (r_size + (width - line_start) < size):
+                r_char = (width - line_start)
+                r_size += (width - line_start)
+            else:
+                r_char = size - r_size
+                r_size = size
+
+            line = fp.read(r_char)
+            if len(line) == 0:
+                break
+            output = "%08X : " % col
+
+            output += line_start * "   " \
+                      + "".join("%02x " % ord(c) for c in line)
+
+            output += line_start * " "
+            output += "".join(['.', c][self.IsPrint(c)] for c in line)
+            print output
+            col += width
+            line_start = 0
+            if r_size == size:
+                break
+        fp.close()
+
+
+    def Buffer(self, buf, start, size=0x200, width=16):
+        # 주어진 크기보다 크면 버퍼가 작다면 인자값을 조정
+        if len(buf) < size:
+            size = len(buf)
+        row = start % width  # 열
+        col = (start / width)  # 행
+        # [row ... width*col]
+        # [width*col ... width * (col+1)]
+        r_size = 0
+        line_start = row + (col * width)
+        # print hex(line_start), hex(width*(col+1))
+        # print hex(row), hex(col)
+        while True:
+            line = buf[line_start:width * (col + 1)]
+
+            if len(line) == 0:
+                break
+            if ((r_size + len(line)) < size):
+                pass
+            else:
+                # print hex(line_start), hex(line_start + (size - r_size))
+                line = line[0:(size - r_size)]
+                r_size = size - len(line)
+            # 주소 값
+            output = "%08X : " % ((line_start / width) * width)
+            # Hex 값
+            output += row * "   " \
+                      + "".join("%02x " % ord(c) for c in line)
+            output += "  " \
+                      + (width - (row + len(line))) * "   "
+            # 문자 값
+            output += row * " "
+            output += "".join(['.', c][self.IsPrint(c)] for c in line)
+            print output
+            line_start = width * (col + 1)
+            col += 1
+            row = 0
+            r_size += len(line)
+            if r_size == size:
+                break
+
+    def IsPrint(self, char):
+        c = ord(char)
+        if c >= 0x20 and c < 0x80:
+            return True
+        else:
+            return False
