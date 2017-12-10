@@ -156,13 +156,16 @@ class FoxMain:
                 try:
                     if os.path.exists(rname):
                         with open(rname, 'rb') as fp;
-                        buf = fp.read()
+                            buf = fp.read()
 
-                        if len(all_script_info[idx][2]) < len(buf):
-                            return False
+                            if len(all_script_info[idx][2]) < len(buf):
+                                return False
 
-                        buf += ' ' * (len(all_script_info[idx][2]) - len(buf))
-                        all_script_info[idx][2] = buf
+                            buf += ' ' * (len(all_script_info[idx][2]) - len(buf))
+                            all_script_info[idx][2] = buf
+                    else:
+                        buf = ' ' * len(all_script_info[2])
+                        all_script_info[2] = buf
                 except IOError:
                     pass
 
