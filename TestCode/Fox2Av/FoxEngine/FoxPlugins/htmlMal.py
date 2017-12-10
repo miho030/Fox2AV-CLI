@@ -1,4 +1,20 @@
-# _*_ coding:utf-8 _*_
+# _*_coding:utf-8 _*_
+"""
+Made by Nicht = tayaka = Lee joon sung
+South Korea. Seoul. Gangnam. gaepodong.
+
+contact admin = miho0_0@naver.com OR anonymous0korea0@gmail.com(youtube) OR miho03092@gmail.com(gmail)
+This is Opensource Computer Anti-Virus program.
+anyone can modificate this script. n you can edit this program on own your system environment.
+
+This AV is compiled by Pycharm-community, made with Python 2.7.12, licensing on GNU Gnu Public License Ver.3.
+
+just fun! :D
+
+"""
+
+# 주석문 미작성.
+# 시간이 나면 주석문 작성 예정.
 
 import os
 import re
