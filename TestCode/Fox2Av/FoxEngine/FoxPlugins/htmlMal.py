@@ -134,7 +134,7 @@ class FoxMain:
             except IOError:
                 return False
 
-            for obj in self.p_script.findall(buf):
+            for obj in self.p_script.finditer(buf):
                 t = obj.group()
                 pos = obj.span()
                 p = t.lower()
