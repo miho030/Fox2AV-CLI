@@ -178,7 +178,7 @@ class FoxMain:
 
 
 
-    # 압툭을 하였으면 재압축을 해야지!
+    # 압축을 하였으면 재압축을 해야지!
     # 기존 압축파일 악성코드 진단/치료 모듈의 형식상 그대로 구현하기로했다.
     #
     # 리턴값은 당연히...![암축 성공 여부!]
@@ -208,3 +208,97 @@ class FoxMain:
                 for idx, file_info in enumerate(file_infos):
                     rname = file_info.get_filename()
                     try:
+                        if os.path.exists(rname): # 치료된 파일이 존재하는지?
+                            with open(rname, 'rb') as fp:
+                                buf = fp.read()
+
+                                if len(all_script_info[idx][2]) < len(buf):
+                                    return False
+
+                                buf += ' ' * (len(all_script_info[idx][2]) - len(buf))
+                                all_script_info[idx][2] = buf
+                        else:
+                            buf = ' ' * len(all_script_info[idx][2])
+                            all_script_info[idx][2] = buf
+                    except IOError:
+                        pass
+
+
+                # 모든 데이터를 합쳐서 원본 파일로 복구하기.
+                fp = open(arc_name, 'wb')
+                start_pos = 0
+                for script_info in all_script_info:
+                    pos = script_info[1]
+                    buf = org_buf[start_pos:pos[0]]
+                    fp.write(buf)
+                    fp.write(script_info[2])
+                    start_pos = pos[1]
+                else:
+                    fp.write(org_buf[start_pos:])
+
+                fp.close()
+                return True
+
+        return False
+
+
+    # 악성코드를 검사하는 모듈. 스크립트 내부의 악성코드가 존재하는지 확인함.
+    # filehandle = 파일 핸들, filename = 파일 이름, fileforamt = 파일 포맷, filename_ex = 파일 이름(압축 내부 데이터)
+    # 리턴값 = [악성코드 발견 여부, 악성코드 이름, 악성코드 ID]
+    def scan(self, filehandle, filename, fileformat, filename_ex): # 악성코드 검사 시작
+        try:
+            mm = filehandle
+
+            if not ('ff_html' in fileformat or
+                    'ff_script' in fileformat or
+                    'ff_ifrmae' in fileformat or
+                    'ff_script_external' in fileformat or
+                    'ff_ifrma_externel' in fileformat):
+
+                raise ValueError # 해당 포맷이 포함되어 있을 때만 script 엔진 검사 실행.
+
+            if FoxUtils.is_textfile(mm[:4096]):
+                buf = mm[:]
+
+                buf = self.p_http.sub('', buf) # http:// 제거하기.
+                buf = self.p_script_cmt1.sub('', buf) # 스크립트 파일 내분의 모든 주석문 제거
+
+                # 두 주석문이 보일 때만 제거 작업 실행 -> 처리 속도를 빠르게 하기위해서..
+                pos2 = -1
+                pos1 = buf.find('/*')
+                if pos1 != -1:
+                    pos2 = buf.rfind('/*')
+
+                if 0 <= pos1 < pos2:
+                    buf = self.p_script_cmt2.sub('', buf) # 주석문 제거 실시
+
+                buf = self.p_script_cmt3.sub('', buf)
+                buf = self.p_space.sub('', buf)
+                buf = buf.lower() # 영어 소문자로 통일시키기
+
+                size = len(buf)
+                # script 패턴에서 지정된 해당 크기가 존재하는지
+                if FoxUtils.handle_pattern_md5.match_size('script', size):
+                    fmd5 = hashlib.md5(buf).hexdigest() # Md5 해시 구하기 -> 한줄로
+                    # .. 스크립트 패턴에서 MD5해시 검사 실시.
+                    vname = FoxUtils.handle_pattern_md5.scan('script', size, fmd5)
+                    if vname:
+                        return True, vname, 0, FoxKernel.INFECTED
+        except IOError:
+            pass
+        except ValueError:
+            pass
+
+        return False, '', -1, FoxKernel.NOT_FOUND
+
+
+    def CureInfected(self, filename, malware_ID): # 악성코드 치료..
+        try:
+            # 악성코드 진단 결과에서 받은 malware_ID 값이 0인가?
+            if malware_ID == 0:
+                os.remove(filename) #악성코드 삭제 시도
+                return True # 악성코드 치료 완료시 리턴함.
+        except IOError:
+            pass
+
+        return False # 악성코드 치료 실패..
