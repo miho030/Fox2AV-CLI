@@ -3,8 +3,12 @@
 # youtube : anonymous0korea0@gmail.com ;;;; tayaka
 # Email : miho0_0@naver.com
 
+#  구버전 GUI 엔진임.
+
 
 from PyQt4 import QtCore, QtGui
+import socket as S
+from Tkinter import * as TK
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -78,8 +82,8 @@ class Ui_FoxVc(object):
         QtCore.QMetaObject.connectSlotsByName(FoxVc)
 
     def retranslateUi(self, FoxVc):
-        FoxVc.setWindowTitle(_translate("FoxVc", "FoxVaccine", None))
-        self.SelectDirectory.setText(_translate("FoxVc", "&& Select Drive (e.x C or D or C\\Users )", None))
+        FoxVc.setWindowTitle(_translate("FoxVc", "Fox-Anti Virus Security Module", None))
+        self.SelectDirectory.setText(_translate("FoxVc", "* Select Drive (e.x C or D or C\\Users )", None))
         self.Ok.setText(_translate("FoxVc", "OK", None))
         self.Author_1.setText(_translate("FoxVc", "This program made by nicht,", None))
         self.Author_2.setText(_translate("FoxVc", "Seoul, Jungsan HS, 31227 Lee Joon Sung", None))
@@ -87,8 +91,8 @@ class Ui_FoxVc(object):
         self.Indi.setText(_translate("FoxVc", "Exactly, Author loves Fox.", None))
         self.Youtube.setText(_translate("FoxVc", "YOUTUBE : anonymous0korea0@gmail.com", None))
         self.Email.setText(_translate("FoxVc", "Email : miho0_0@naver.com", None))
-        self.ProcessIntro.setText(_translate("FoxVc", "&& Process Window &&", None))
-        self.CureIntro.setText(_translate("FoxVc", "&& Cure List Window &&", None))
+        self.ProcessIntro.setText(_translate("FoxVc", "* Process Window *", None))
+        self.CureIntro.setText(_translate("FoxVc", "* Cure List Window *", None))
 
 
 if __name__ == "__main__":
