@@ -7,8 +7,6 @@
 
 
 from PyQt4 import QtCore, QtGui
-import socket as S
-from Tkinter import * as TK
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
