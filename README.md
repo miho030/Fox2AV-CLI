@@ -20,71 +20,8 @@ We recommend **FoxVc version 1.2.8 or later.**
 + **Im trying to implement heuristic analysis using Python 2.7, However, I expect that it will take a considerable amount of time to realize it because there is not a lot of research data, and there is no case left for data by implementing heuristic inspection using Python.**    
 + Malware DB -> main.mdb, main.hdb || These will be updated continuously as soon as possible.  
 **I made new Server at 2017-09-25, for Malware-analysis. New Server is consists of [Cuckoo SandBox, Maltrieve, Yara_Generator, guest OS(IE8 Win7)]**  
- 
-* * *  
-
-## New Informations for updates!  
 
 
-### 새로이 개발중인 Fox2Av 에 적용된 기술과 기능에 대한 설명.  
-개발중인 Fox2Av는 기존 FoxVc의 문제점을 패치하고 있습니다.  
-
-* 기존에 존재했던 문제점은...  
-``` 
-
-
-1. 악성코드 검사후 각 malware별 치료 모듈이 확고하지 않았음.  
-   -> 커널이 파일을 불러와 이를 플러그인 엔진에게 진단/치료 가능한지 질의하고 명령을 하달하는 플러그인 구조 사용하여 재구축
-
-2. 백신 엔진이 직접 악성코드를 탐지하는 형태라서 악성코드 분석시, 상당히 시간이 걸림  
-   -> 커널이 사용자가 입력한 파일/디렉토리를 파악하여(파일의 open을 최소화 시키기 위함), 이를 각 모듈에 질의 하는 방식으로
-      검사속도를 상당히 감소시킴.
-      
-3. Anti-Virus 프로젝트 파일 미성숙  
-   -> 백신 프로젝트 폴더의 구조 및 구성의 미성숙.
-      확고한 폴더와 파일을 구축하고, 각 백신 플러그인 엔진을 커널이 무결성검증 검사를 통해 관리상 용이점 극대화.
-      
-4. 각종 취약점에 대응하는 보안기술 미적용  
-   -> 백신 커널, 플러그인 엔진, 악성코드DB, 악성코드 패턴, 코어파일등 중요한 파일에 대해 위.변조 방지기법 채용
-   
-        1. Header : 백신 이니셜 + 정보 표시[lastest updated files](날짜, 시간값)
-        2. Body : individual Key를 이용해 암호화된 RC4키 + RC4로 암호화된 압축된 내부 소스코드
-        3. Tailer : 개인키로 암호화한 Header와 Body전체에 대해 md5를 3번 연산한 결과.
-   -> 이와 같이 소스코드는 py -> pyc -> fxm의 파일변환을 거치며 암호화되어 해커가 백신코어나 파일을 임의로 변조하여 적용할 수 없도록..
-        
-5. 정규화되지 않은 소스코드들  
-   -> 소스코드 내 변수, 함수명, 파일명등을 사용하기 쉽도록 재명하고, 최대한 정규표현식을 사용하여 구축함.
-   -> Web Script 내의 악성코드 탐지를 위해(WebShell, JS 악성 페이지, HTML소스 등) Json정규표현식을 소스내 도입.
-
-6. malwareDB로부터 나오는 악성코드 패턴을 효율적으로 사용하지 못하는 소스코드 
-   -> 기존 malware-DB에서 추출한 데이터를 리스트로 나누어 사용하는 방식을 대폭 업그레이드함.
-   
-7. 구조상의 문제점.
-   -> 기존 FoxVc은 하나의 모듈이 fname으로 특정 디렉토리에 파일을 불러들여 악성코드들을 진단/치료하는 형식이었음.
-   --> 결과 : 악성코드 진단/치료의 속도 저하, 모듈 안정성 저하, 보안적이지 않은 구조, 효율적이지 못한 악성코드 처리.
-   
-      + 보완
-         [1]. 백신 커널이 먼저 사용자의 명령을 받아, 파일들을 open, 결과물을 저장해 놓았다가 진단/치료상의 우선순위를 RSA, RC4로  
-              FoxVc.fxm파일을 불러들여, 우선순위인 백신 플러그인 엔진을 메모리에 로딩시킨다.
-         [2]. 로딩된 플러그인 엔진들은 백신커널이 전송해준 (열어놓은)파일들을 자신이 치료 가능한지에 대해서 리턴한다.
-         [3]. 악성코드가 존재하다고 판단되면 결과를 백신커널에 리턴한다.
-         [4]. 백신커널이 사용자에게 처리를 질의하고, 각 명령을 변수화하여 치료가능한 백신 플러그인엔진에게 치료 명령을 하달한다.
-         [5]. 각 모듈(중요파일 => Fvc~.py, FoxVc.lst, MalwareDB...mal-pattern)들은 "문제점 4번"의 해결법과 같은 방식으로
-              fxm(FoXcmadeKey)확장자로 모듈들이 보호되어 형태이므로, 백신커널은 복호화모듈을 임포트하여 각 모듈들을 사용하기 전에
-              (1) *.fxm    --> (2) *.pyc   --> (3) *.py 의 차례로 복호화되어 사용되는 보안체계를 채택함.
-
-8. 진보하는 악성코드에 비해 진보적이지 못한 백신의 각 악성코드 처리
-   -> 다양한 악성코드를 처리를 위한 다량의 플러그인 엔진 개발
-   
-      [1] 압축파일(zip, alz)의 처리위한 엔진 구축.
-      [2] pdf파일과, hwp파일과 같은 문서형 악성코드 처리위한 엔진 구축.
-      [3] windows 시리즈를 타겟으로 제작된 악성코드 처리위한 엔진 구축.
-      [4] html, JavaScript기반으로 제작된 악성코드 처리위한 엔진 구축.
-      [5] PE 헤더파일 진단/분석 위한 새로운 모듈 개발.
-    
-```
-    
-* * *
 ## N_FoxVc, Fox2Av's Testcode are updated.
    
  
