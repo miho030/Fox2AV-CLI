@@ -12,7 +12,7 @@ We recommend **FoxVc version 1.2.8 or later.**
 
 * * *
 
-## HI, Im noob Opensource Program coder, Nicht.
+## HI, Im noob Opensource Program coder, Nicht.(Misty)
 
 + This Program is follwing GNU/General Public License 3, so **anyone can modificate this program on own system environment.**  
 + **This program was created with Python 2.7** 
