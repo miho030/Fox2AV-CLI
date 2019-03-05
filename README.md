@@ -104,6 +104,11 @@ The N_FoxVc is built with a structure and methodology that is significantly diff
   > supporting zip and rar, 7zip, tar, tar.gz, tar.bz, bz files.  
 2. Introduced a new type of vaccine engine!  
   - The structure of the FoxVc engine is based on the "Structure and Principle of Anti-Virus" written by professor Choi Won-hyuk, who is currently developing Kicom vaccine.  
+  
+  
+### 5. A new FoxVc is developed!!!    
+  1. Fox2Av is updated!
+  > please watch out new source code at TestCode folder.
 
 * * *
 
