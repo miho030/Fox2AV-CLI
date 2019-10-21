@@ -1,9 +1,18 @@
 # -*- coding: utf-8 -*-
 
-# Author : Repubic of Korea, Seoul, JungSan HS  31227 Lee Joon Sung
-# Author_Helper : Republic of Korea, KyungGido, Kim Min Seok
-# youtube : anonymous0korea0@gmail.com ;;;; tayaka
+# Author : Lee Joon Sung
 # Email : miho0_0@naver.com
+
+"""
+Special note for FoxVc 1.2.9
+There is some plan to reinforcement Foxvc's structure about linux version due to security problem.
+Here is some plan for 1.2.9...
+> anti reversing code
+> sorting code
+> adding encryption pgm
+> malwarebyteDB sychrouning through p2p Vc server
+> Self check and self remove, protect module implant.
+"""
 
 import os
 import sys
