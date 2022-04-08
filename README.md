@@ -110,8 +110,6 @@ The N_FoxVc is built with a structure and methodology that is significantly diff
 * * *
 
 ## All new notifications and informations.  
-
-+ **관리방식 교체로 인해 기존 저장소를 삭제하고 동일이름의 새로운 저장소로 업그레이드 되었습니다.**    
 + **새로운 버전인 Fox2AV 이 개발중에 있습니다.**  
 + **Fox2AV의 테스트 코드는 TestCode폴더에서 각 업데이트별로 확인할 수 있습니다**    
 Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/  
@@ -119,7 +117,4 @@ Soure of Image : https://www.boredpanda.com/fox-species-wildlife-photography/
 * * *
 * * *
 
-## Information of Coder    
- 
-- Email : miho0_0@naver.com   
-- Lee Joon Sung; Republic of Korea, Seoul, Gangnam, Gaepodong.  
+- written by Misty;KISA
