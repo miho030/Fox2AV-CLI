@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Author : Repubic of Korea, Seoul, JungSan HS  31227 Lee Joon Sung
-# Author_Helper : Republic of Korea, KyungGido, Kim Min Seok
-# youtube : anonymous0korea0@gmail.com ;;;; tayaka
-# Email : miho0_0@naver.com
+# Author : github.com/miho030
 
 # +=======================================================================================+
 # 주요 모듈 임포트 (사실 각 버전별 최적화된 모듈에서 임포트하므로 사실상 필요없음.)
