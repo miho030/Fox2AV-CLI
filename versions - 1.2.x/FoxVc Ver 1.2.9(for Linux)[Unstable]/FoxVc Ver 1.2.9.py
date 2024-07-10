@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Author : Lee Joon Sung
-# Email : miho0_0@naver.com
+# Author : github.com/miho030
 
 """
 Special note for FoxVc 1.2.9

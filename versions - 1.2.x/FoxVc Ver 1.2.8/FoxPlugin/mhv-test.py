@@ -1,4 +1,4 @@
-
+# Author : github.com/miho030
 import hashlib
 import os
 import sys

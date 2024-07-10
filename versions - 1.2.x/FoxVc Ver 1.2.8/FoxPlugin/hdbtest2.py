@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-
-# Author : Repubic of Korea, Seoul, JungSan HS  31227 Lee Joon Sung
-# Author_Helper : Republic of Korea, KyungGido, Kim Min Seok
-# youtube : anonymous0korea0@gmail.com ;;;; tayaka
-# Email : miho0_0@naver.com
+# Author : github.com/miho030
 
 #-----------------------------------------------------------------------------------------------------
 # DB를 정리하여 루틴에 적용하는 모듈
