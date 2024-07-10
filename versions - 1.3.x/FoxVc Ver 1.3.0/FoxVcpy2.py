@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# Author : Repubic of Korea, Seoul, JungSan HS  31227 Lee Joon Sung
-# Author_Helper : Republic of Korea, KyungGido, Kim Min Seok
-# youtube : anonymous0korea0@gmail.com ;;;; tayaka
-# Email : miho0_0@naver.com
-
 # +=======================================================================================+
 # 이 파일은 파이썬 2 이상의 버전이 설치되어있는 시스템 사용자를 위한 모듈임.
 # Python 2.7.14 기준의 문법으로 작성되었음.
